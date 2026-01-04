@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>キッズ・タイムマネージャー AI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Noto+Sans+JP', sans-serif;
+            background-color: #f0f9ff;
+        }
+
+        .timer-display {
+            font-variant-numeric: tabular-nums;
+        }
+
+        .card {
+            background: white;
+            border-radius: 24px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+
+        .btn-start {
+            background: linear-gradient(135deg, #4ade80 0%, #22c55e 100%);
+        }
+
+        .btn-stop {
+            background: linear-gradient(135deg, #fb7185 0%, #e11d48 100%);
+        }
+
+        .ai-gradient {
+            background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+            border: 1px solid #bfdbfe;
+        }
+
+        /* Loading animation */
+        .dot-flashing {
+            position: relative;
+            width: 10px;
+            height: 10px;
+            border-radius: 5px;
+            background-color: #3b82f6;
+            color: #3b82f6;
+            animation: dot-flashing 1s infinite linear alternate;
+            animation-delay: .5s;
+        }
+        .dot-flashing::before, .dot-flashing::after {
+            content: '';
+            display: inline-block;
+            position: absolute;
+            top: 0;
+        }
+        .dot-flashing::before {
+            left: -15px;
+            width: 10px;
+            height: 10px;
+            border-radius: 5px;
+            background-color: #3b82f6;
+            color: #3b82f6;
+            animation: dot-flashing 1s infinite alternate;
+            animation-delay: 0s;
+        }
+        .dot-flashing::after {
+            left: 15px;
+            width: 10px;
+            height: 10px;
+            border-radius: 5px;
+            background-color: #3b82f6;
+            color: #3b82f6;
+            animation: dot-flashing 1s infinite alternate;
+            animation-delay: 1s;
+        }
+        @keyframes dot-flashing {
+            0% { background-color: #3b82f6; }
+            50%, 100% { background-color: #ebe6ff; }
+        }
+    </style>
+</head>
+<body class="min-h-screen p-4 md:p-8 pb-20">
+    <div class="max-w-md mx-auto space-y-6">
+        <!-- Header -->
+        <header class="text-center">
+            <h1 class="text-2xl font-bold text-blue-600">🎮 タイムマネージャー AI</h1>
+            <p class="text-gray-500 text-sm italic">AIといっしょに楽しく時間管理！</p>
+        </header>
+
+        <!-- Current Status & Timer -->
+        <div class="card p-6 text-center">
+            <h2 class="text-lg font-bold text-gray-700 mb-2">いまの時間</h2>
+            <div id="statusBadge" class="inline-block px-3 py-1 rounded-full text-xs font-bold mb-4 bg-gray-200 text-gray-600 uppercase tracking-wider">
+                STANDBY
+            </div>
+            <div id="timerDisplay" class="timer-display text-6xl font-bold text-gray-800 mb-6">
+                00:00:00
+            </div>
+
+            <div class="flex gap-4">
+                <button id="startBtn" class="btn-start flex-1 py-4 rounded-2xl text-white font-bold text-lg shadow-lg active:scale-95 transition-transform">
+                    スタート
+                </button>
+                <button id="stopBtn" class="btn-stop flex-1 py-4 rounded-2xl text-white font-bold text-lg shadow-lg hidden active:scale-95 transition-transform">
+                    おわり
+                </button>
+            </div>
+        </div>
+
+        <!-- AI Advice Section -->
+        <div class="card p-6 ai-gradient relative overflow-hidden">
+            <div class="flex items-center mb-3">
+                <span class="text-xl mr-2">✨</span>
+                <h3 class="font-bold text-blue-800">AIアドバイス</h3>
+            </div>
+            <div id="aiAdviceContent" class="text-sm text-blue-900 leading-relaxed min-h-[3rem]">
+                「スタート」を押して遊び始めよう！終わったらAIがアドバイスをくれるよ。
+            </div>
+            <div id="aiLoading" class="hidden absolute inset-0 bg-white/50 flex items-center justify-center">
+                <div class="dot-flashing"></div>
+            </div>
+            <button id="refreshAiBtn" class="mt-3 text-xs font-bold text-blue-600 hover:text-blue-800 flex items-center hidden">
+                ✨ 別のアドバイスをもらう
+            </button>
+        </div>
+
+        <!-- Today's Stats -->
+        <div class="card p-6">
+            <div class="flex justify-between items-start mb-4">
+                <h3 class="font-bold text-gray-700 flex items-center">
+                    <span class="mr-2">📊</span> 本日の合計
+                </h3>
+                <span id="limitStatus" class="text-[10px] font-bold px-2 py-0.5 rounded bg-blue-100 text-blue-600 uppercase">Good</span>
+            </div>
+            <div class="flex justify-between items-end">
+                <div>
+                    <span id="totalTimeDisplay" class="text-4xl font-bold text-blue-600">0</span>
+                    <span class="text-gray-500 font-bold ml-1 text-sm">分 / 60分</span>
+                </div>
+            </div>
+            <div class="w-full h-3 bg-gray-100 rounded-full mt-4 overflow-hidden">
+                <div id="progressBar" class="h-full bg-blue-500 transition-all duration-700 ease-out" style="width: 0%"></div>
+            </div>
+        </div>
+
+        <!-- Weekly Summary AI -->
+        <div class="card p-6 border-t-4 border-blue-400">
+            <div class="flex justify-between items-center mb-4">
+                <h3 class="font-bold text-gray-700">最近のレポート</h3>
+                <button id="analyzeBtn" class="bg-blue-600 text-white text-xs px-3 py-1.5 rounded-full font-bold hover:bg-blue-700 transition-colors">
+                    ✨ AIで分析する
+                </button>
+            </div>
+            <canvas id="historyChart" class="mb-4"></canvas>
+            <div id="analysisResult" class="text-xs text-gray-600 bg-gray-50 p-3 rounded-xl hidden italic leading-relaxed">
+                分析中...
+            </div>
+        </div>
+
+        <!-- Log List -->
+        <div class="card p-6">
+            <h3 class="font-bold text-gray-700 mb-4 text-sm">今日のログ</h3>
+            <div id="logList" class="space-y-2 max-h-48 overflow-y-auto pr-1">
+                <p class="text-gray-400 text-center py-4 text-xs italic">まだ記録がありません</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const apiKey = ""; // Runtime provides the key
+
+        // State Management
+        let isRunning = false;
+        let startTime = null;
+        let timerInterval = null;
+        let logs = JSON.parse(localStorage.getItem('screenTimeLogs') || '[]');
+        let dailyGoalMinutes = 60;
+
+        // DOM Elements
+        const timerDisplay = document.getElementById('timerDisplay');
+        const startBtn = document.getElementById('startBtn');
+        const stopBtn = document.getElementById('stopBtn');
+        const statusBadge = document.getElementById('statusBadge');
+        const totalTimeDisplay = document.getElementById('totalTimeDisplay');
+        const progressBar = document.getElementById('progressBar');
+        const logList = document.getElementById('logList');
+        const aiAdviceContent = document.getElementById('aiAdviceContent');
+        const aiLoading = document.getElementById('aiLoading');
+        const refreshAiBtn = document.getElementById('refreshAiBtn');
+        const analyzeBtn = document.getElementById('analyzeBtn');
+        const analysisResult = document.getElementById('analysisResult');
+        const limitStatus = document.getElementById('limitStatus');
+        const ctx = document.getElementById('historyChart').getContext('2d');
+
+        // Initialize Chart
+        let historyChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['', '', '', '', '', '', '今日'],
+                datasets: [{
+                    label: '分',
+                    data: [0, 0, 0, 0, 0, 0, 0],
+                    backgroundColor: '#60a5fa',
+                    borderRadius: 8,
+                    barThickness: 15
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    y: { beginAtZero: true, grid: { display: false } },
+                    x: { grid: { display: false } }
+                },
+                plugins: { legend: { display: false } }
+            }
+        });
+
+        // Gemini API Helper with exponential backoff
+        async function callGemini(prompt, systemInstruction = "") {
+            const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key=${apiKey}`;
+            const payload = {
+                contents: [{ parts: [{ text: prompt }] }],
+                systemInstruction: { parts: [{ text: systemInstruction }] }
+            };
+
+            for (let i = 0; i < 5; i++) {
+                try {
+                    const response = await fetch(url, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(payload)
+                    });
+                    if (!response.ok) throw new Error('API Error');
+                    const result = await response.json();
+                    return result.candidates?.[0]?.content?.parts?.[0]?.text;
+                } catch (e) {
+                    const delay = Math.pow(2, i) * 1000;
+                    await new Promise(resolve => setTimeout(resolve, delay));
+                }
+            }
+            throw new Error('Failed after retries');
+        }
+
+        async function getAiAdvice(totalMinutes) {
+            aiLoading.classList.remove('hidden');
+            const systemPrompt = "あなたは子供の生活習慣をサポートする優しいAIです。返答は親しみやすく、30文字〜60文字程度で、子供が次に取るべき具体的なアクション（外で遊ぶ、本を読む、ストレッチするなど）を一つ提案してください。";
+            const userPrompt = `現在の今日の合計ゲーム利用時間は${totalMinutes}分です。目標は60分です。今の状況に合わせたアドバイスをください。`;
+
+            try {
+                const text = await callGemini(userPrompt, systemPrompt);
+                aiAdviceContent.textContent = text;
+                refreshAiBtn.classList.remove('hidden');
+            } catch (e) {
+                aiAdviceContent.textContent = "ごめんね、AIがちょっと休憩中みたい。少し時間をおいてみてね。";
+            } finally {
+                aiLoading.classList.add('hidden');
+            }
+        }
+
+        async function analyzeHistory() {
+            analyzeBtn.disabled = true;
+            analysisResult.classList.remove('hidden');
+            analysisResult.textContent = "AIがデータを読み取っています...";
+
+            const last7DaysData = historyChart.data.datasets[0].data;
+            const systemPrompt = "あなたは教育アドバイザーです。親に向けて、子供のスクリーンタイムの傾向をポジティブに分析し、100文字程度でアドバイスしてください。専門用語は避け、温かい言葉を使ってください。";
+            const userPrompt = `直近1週間の利用時間データ（分）は以下の通りです: ${JSON.stringify(last7DaysData)}。この傾向から、褒めるポイントや注意点を教えてください。`;
+
+            try {
+                const text = await callGemini(userPrompt, systemPrompt);
+                analysisResult.textContent = `✨ AIレポート: ${text}`;
+            } catch (e) {
+                analysisResult.textContent = "レポートの作成に失敗しました。";
+            } finally {
+                analyzeBtn.disabled = false;
+            }
+        }
+
+        function formatTime(ms) {
+            const totalSeconds = Math.floor(ms / 1000);
+            const h = Math.floor(totalSeconds / 3600);
+            const m = Math.floor((totalSeconds % 3600) / 60);
+            const s = totalSeconds % 60;
+            return [h, m, s].map(v => v.toString().padStart(2, '0')).join(':');
+        }
+
+        function updateUI() {
+            const today = new Date().toLocaleDateString();
+            const todayTotalMs = logs
+                .filter(log => new Date(log.end).toLocaleDateString() === today)
+                .reduce((acc, log) => acc + (new Date(log.end) - new Date(log.start)), 0);
+
+            const totalMinutes = Math.floor(todayTotalMs / 60000);
+            totalTimeDisplay.textContent = totalMinutes;
+
+            // Progress Bar & Status
+            const percent = Math.min((totalMinutes / dailyGoalMinutes) * 100, 100);
+            progressBar.style.width = `${percent}%`;
+
+            if (percent >= 100) {
+                progressBar.className = "h-full bg-red-500 transition-all duration-700";
+                limitStatus.textContent = "Limit Reached";
+                limitStatus.className = "text-[10px] font-bold px-2 py-0.5 rounded bg-red-100 text-red-600 uppercase";
+            } else if (percent > 80) {
+                progressBar.className = "h-full bg-yellow-400 transition-all duration-700";
+                limitStatus.textContent = "Almost there";
+                limitStatus.className = "text-[10px] font-bold px-2 py-0.5 rounded bg-yellow-100 text-yellow-600 uppercase";
+            } else {
+                progressBar.className = "h-full bg-blue-500 transition-all duration-700";
+                limitStatus.textContent = "Good";
+                limitStatus.className = "text-[10px] font-bold px-2 py-0.5 rounded bg-blue-100 text-blue-600 uppercase";
+            }
+
+            // Log List
+            const todayLogs = logs.filter(log => new Date(log.end).toLocaleDateString() === today).reverse();
+            if (todayLogs.length > 0) {
+                logList.innerHTML = todayLogs.map(log => `
+                    <div class="flex justify-between items-center p-2.5 bg-gray-50 rounded-xl text-xs">
+                        <div class="text-gray-500 font-medium">
+                            ${new Date(log.start).toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})} - ${new Date(log.end).toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})}
+                        </div>
+                        <div class="text-blue-600 font-bold bg-white px-2 py-1 rounded-md shadow-sm">
+                            ${Math.floor((new Date(log.end) - new Date(log.start)) / 60000)}分
+                        </div>
+                    </div>
+                `).join('');
+            }
+
+            updateChart();
+        }
+
+        function updateChart() {
+            const data = [];
+            const labels = [];
+            for (let i = 6; i >= 0; i--) {
+                const d = new Date();
+                d.setDate(d.getDate() - i);
+                const dateStr = d.toLocaleDateString();
+                const dayTotal = logs
+                    .filter(log => new Date(log.end).toLocaleDateString() === dateStr)
+                    .reduce((acc, log) => acc + (new Date(log.end) - new Date(log.start)), 0);
+                data.push(Math.floor(dayTotal / 60000));
+
+                if (i === 0) labels.push('今日');
+                else if (i === 1) labels.push('昨日');
+                else labels.push(`${d.getMonth() + 1}/${d.getDate()}`);
+            }
+            historyChart.data.labels = labels;
+            historyChart.data.datasets[0].data = data;
+            historyChart.update();
+        }
+
+        startBtn.addEventListener('click', () => {
+            isRunning = true;
+            startTime = new Date();
+            startBtn.classList.add('hidden');
+            stopBtn.classList.remove('hidden');
+            statusBadge.textContent = 'ACTIVE';
+            statusBadge.className = 'inline-block px-3 py-1 rounded-full text-xs font-bold mb-4 bg-green-100 text-green-600 uppercase tracking-wider';
+
+            timerInterval = setInterval(() => {
+                const now = new Date();
+                const diff = now - startTime;
+                timerDisplay.textContent = formatTime(diff);
+            }, 1000);
+        });
+
+        stopBtn.addEventListener('click', async () => {
+            if (!isRunning) return;
+
+            const endTime = new Date();
+            const newLog = {
+                start: startTime.toISOString(),
+                end: endTime.toISOString()
+            };
+
+            logs.push(newLog);
+            localStorage.setItem('screenTimeLogs', JSON.stringify(logs));
+
+            clearInterval(timerInterval);
+            isRunning = false;
+            timerDisplay.textContent = '00:00:00';
+            stopBtn.classList.add('hidden');
+            startBtn.classList.remove('hidden');
+            statusBadge.textContent = 'STANDBY';
+            statusBadge.className = 'inline-block px-3 py-1 rounded-full text-xs font-bold mb-4 bg-gray-200 text-gray-600 uppercase tracking-wider';
+
+            updateUI();
+
+            // AI Advice trigger
+            const todayTotalMs = logs
+                .filter(log => new Date(log.end).toLocaleDateString() === new Date().toLocaleDateString())
+                .reduce((acc, log) => acc + (new Date(log.end) - new Date(log.start)), 0);
+            getAiAdvice(Math.floor(todayTotalMs / 60000));
+        });
+
+        refreshAiBtn.addEventListener('click', () => {
+            const todayTotalMs = logs
+                .filter(log => new Date(log.end).toLocaleDateString() === new Date().toLocaleDateString())
+                .reduce((acc, log) => acc + (new Date(log.end) - new Date(log.start)), 0);
+            getAiAdvice(Math.floor(todayTotalMs / 60000));
+        });
+
+        analyzeBtn.addEventListener('click', analyzeHistory);
+
+        // Initial Load
+        updateUI();
+    </script>
+</body>
+</html>
