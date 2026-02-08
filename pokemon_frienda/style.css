@@ -1,0 +1,464 @@
+:root {
+    --primary-color: #ffca00;
+    /* Pikachu Yellow */
+    --secondary-color: #3b4cca;
+    /* Pokemon Blue */
+    --accent-color: #ff0000;
+    /* Pokeball Red */
+    --bg-color: #f0f8ff;
+    --text-color: #333;
+    --card-bg: #fff;
+    --font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* Controls Section */
+.controls {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    margin-bottom: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: flex-end;
+}
+
+.search-box,
+.filter-box,
+.sort-box {
+    flex: 1;
+    min-width: 200px;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+input,
+select {
+    width: 100%;
+    padding: 0.8rem;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: var(--font-family);
+    box-sizing: border-box;
+}
+
+input:focus,
+select:focus {
+    border-color: var(--secondary-color);
+    outline: none;
+}
+
+#stats-summary {
+    text-align: right;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+/* Cards Grid */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1rem;
+}
+
+.card {
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    border: 2px solid transparent;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-color: var(--primary-color);
+}
+
+.card-image {
+    width: 100%;
+    height: 200px;
+    background-color: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.card-image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.card-content {
+    padding: 1rem;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.card-id {
+    font-size: 0.8rem;
+    color: #888;
+    background: #eee;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+.card-rarity {
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.card-name {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.4rem;
+    color: #222;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.stat-item {
+    background-color: #f9f9f9;
+    padding: 4px 8px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.stat-label {
+    color: #666;
+}
+
+.stat-value {
+    font-weight: bold;
+}
+
+.main-stat {
+    background-color: #fff9c4;
+    /* Light Yellow */
+    color: #d84315;
+}
+
+.type-badge {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    color: white;
+    background-color: #999;
+    margin-right: 4px;
+    margin-bottom: 4px;
+}
+
+/* Variant Badges */
+.variant-badge {
+    display: inline-block;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: white;
+    background-color: #555;
+    vertical-align: middle;
+}
+
+.variant-parallel {
+    background: linear-gradient(135deg, #FFD700, #FF69B4);
+    box-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
+}
+
+.variant-wonder {
+    background-color: #9C27B0;
+    /* Purple for Wonder */
+}
+
+.variant-shiny {
+    background: linear-gradient(135deg, #C0C0C0, #E0FFFF);
+    color: #333;
+    border: 1px solid #aaa;
+}
+
+/* Type Colors */
+.type-normal {
+    background-color: #A8A77A;
+}
+
+.type-fire {
+    background-color: #EE8130;
+}
+
+.type-water {
+    background-color: #6390F0;
+}
+
+.type-electric {
+    background-color: #F7D02C;
+    color: #333;
+}
+
+.type-grass {
+    background-color: #7AC74C;
+}
+
+.type-ice {
+    background-color: #96D9D6;
+}
+
+.type-fighting {
+    background-color: #C22E28;
+}
+
+.type-poison {
+    background-color: #A33EA1;
+}
+
+.type-ground {
+    background-color: #E2BF65;
+}
+
+.type-flying {
+    background-color: #A98FF3;
+}
+
+.type-psychic {
+    background-color: #F95587;
+}
+
+.type-bug {
+    background-color: #A6B91A;
+}
+
+.type-rock {
+    background-color: #B6A136;
+}
+
+.type-ghost {
+    background-color: #735797;
+}
+
+.type-dragon {
+    background-color: #6F35FC;
+}
+
+.type-dark {
+    background-color: #705746;
+}
+
+.type-steel {
+    background-color: #B7B7CE;
+}
+
+.type-fairy {
+    background-color: #D685AD;
+}
+
+.loading {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 2rem;
+    font-size: 1.2rem;
+    color: #666;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .controls {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .search-box,
+    .filter-box,
+    .sort-box {
+        width: 100%;
+        min-width: unset;
+    }
+
+    /* Mobile: Horizontal Card Layout */
+    .cards-grid {
+        grid-template-columns: 1fr;
+        /* Single column */
+    }
+
+    .card {
+        display: flex;
+        flex-direction: row;
+        height: auto;
+        min-height: 140px;
+    }
+
+    .card-image {
+        width: 120px;
+        height: auto;
+        min-height: 140px;
+        flex-shrink: 0;
+        background-color: #f0f0f0;
+    }
+
+    .card-content {
+        flex-grow: 1;
+        padding: 0.8rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .card-header {
+        margin-bottom: 0.2rem;
+    }
+
+    .card-name {
+        font-size: 1.2rem;
+        margin-bottom: 0.2rem;
+    }
+
+    /* Compact Stats for Mobile */
+    .stats-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4px;
+        font-size: 0.8rem;
+    }
+
+    .stat-item {
+        padding: 2px 6px;
+    }
+
+    /* Hide non-essential stats on very small screens if needed, 
+       but for now let's keep them as 2 columns is fine */
+}
+
+/* Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1000;
+    /* Sit on top */
+    padding-top: 50px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    max-height: 80vh;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    animation-name: zoom;
+    animation-duration: 0.3s;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+    font-size: 1.5rem;
+}
+
+/* Responsive Modal */
+@media only screen and (max-width: 700px) {
+    .modal-content {
+        width: 100%;
+    }
+}

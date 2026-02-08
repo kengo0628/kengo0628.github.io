@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ポケモンフレンダ ずかん</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>ポケモンフレンダ ずかん</h1>
+    </header>
+
+    <div class="container">
+        <!-- Search and Filter Section -->
+        <div class="controls">
+            <div class="search-box">
+                <label for="search-input">なまえでさがす</label>
+                <input type="text" id="search-input" placeholder="例：ピカチュウ">
+            </div>
+
+            <div class="filter-box">
+                <label for="type-filter">タイプ</label>
+                <select id="type-filter">
+                    <option value="">全てのタイプ</option>
+                </select>
+            </div>
+
+            <div class="filter-box">
+                <label for="series-filter">シリーズ</label>
+                <select id="series-filter">
+                    <option value="">全てのシリーズ</option>
+                </select>
+            </div>
+
+            <div class="filter-box">
+                <label for="rarity-filter">レア度（ほし）</label>
+                <select id="rarity-filter">
+                    <option value="">すべて</option>
+                    <option value="5">★★★★★ (5)</option>
+                    <option value="4">★★★★ (4)</option>
+                    <option value="3">★★★ (3)</option>
+                    <option value="2">★★ (2)</option>
+                    <option value="スペシャル">スペシャル</option>
+                </select>
+            </div>
+
+            <div class="sort-box">
+                <label for="sort-select">ならびかえ</label>
+                <select id="sort-select">
+                    <option value="id">IDじゅん</option>
+                    <option value="pokeene_desc">ポケエネ (つよいじゅん)</option>
+                    <option value="pokeene_asc">ポケエネ (よわいじゅん)</option>
+                    <option value="atk_desc">こうげき (つよいじゅん)</option>
+                    <option value="def_desc">ぼうぎょ (かたいじゅん)</option>
+                    <option value="sp_atk_desc">とくこう (つよいじゅん)</option>
+                    <option value="sp_def_desc">とくぼう (かたいじゅん)</option>
+                    <option value="speed_desc">すばやさ (はやいじゅん)</option>
+                    <option value="hp_desc">HP (おおいじゅん)</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Stats Summary -->
+        <div id="stats-summary">
+            ぜんぶで <span id="total-count">0</span> まい あるよ！
+        </div>
+
+        <!-- Cards Container -->
+        <div id="cards-container" class="cards-grid">
+            <div class="loading">データを よみこんでいます...</div>
+        </div>
+    </div>
+
+    <!-- Image Modal -->
+    <div id="image-modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-image">
+        <div id="caption"></div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Pokemon Frienda Database Project</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

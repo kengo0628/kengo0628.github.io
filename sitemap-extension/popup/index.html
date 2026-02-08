@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitemap Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Sitemap Generator</h1>
+
+        <div class="actions">
+            <button id="btn-scan-structure" class="primary">構造マップ作成 (Categories)</button>
+            <button id="btn-scan-list" class="secondary">詳細リスト作成 (All URLs)</button>
+        </div>
+
+        <div id="status-area" class="hidden">
+            <p>Status: <span id="status-text">Ready</span></p>
+            <div class="progress-bar">
+                <div id="progress-fill" style="width: 0%"></div>
+            </div>
+            <p>Found URLs: <span id="url-count">0</span></p>
+        </div>
+
+        <div id="result-area" class="hidden">
+            <button id="btn-export-sheets" class="success">Google Sheetsへ書き出し</button>
+            <button id="btn-export-csv" class="outline">CSVダウンロード</button>
+            <div id="preview"></div>
+        </div>
+    </div>
+    <script src="../utils/google_sheets.js"></script>
+    <script src="popup.js"></script>
+</body>
+
+</html>

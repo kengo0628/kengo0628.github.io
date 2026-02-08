@@ -1,0 +1,96 @@
+body {
+    width: 320px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 16px;
+    margin: 0;
+    color: #333;
+}
+
+h1 {
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.2s;
+}
+
+.primary {
+    background-color: #4285f4;
+    color: white;
+}
+
+.primary:hover {
+    background-color: #3367d6;
+}
+
+.secondary {
+    background-color: #fbbc04;
+    color: #333;
+}
+
+.secondary:hover {
+    background-color: #eaeb04;
+}
+
+.success {
+    background-color: #34a853;
+    color: white;
+}
+
+.success:hover {
+    background-color: #2d8f47;
+}
+
+.outline {
+    background-color: transparent;
+    border: 1px solid #ccc;
+    color: #555;
+}
+
+.outline:hover {
+    background-color: #f1f1f1;
+}
+
+.hidden {
+    display: none;
+}
+
+#status-area {
+    margin-top: 16px;
+    padding: 12px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+}
+
+.progress-bar {
+    height: 6px;
+    background-color: #e0e0e0;
+    border-radius: 3px;
+    margin: 8px 0;
+    overflow: hidden;
+}
+
+#progress-fill {
+    background-color: #4285f4;
+    height: 100%;
+    transition: width 0.3s;
+}
+
+#preview {
+    margin-top: 12px;
+    max-height: 200px;
+    overflow-y: auto;
+    font-size: 12px;
+    border: 1px solid #eee;
+    padding: 4px;
+}

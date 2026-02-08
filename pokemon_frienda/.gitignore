@@ -1,0 +1,22 @@
+# System
+.DS_Store
+
+# Editor
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Project
+.env
+frienda_images/
+*.log
+
+# Data
+*.csv
+# Whitelist the final output for the web app
+!frienda_database_complete.csv

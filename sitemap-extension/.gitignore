@@ -1,0 +1,19 @@
+# Mac System
+.DS_Store
+*.swp
+
+# Chrome Extension Artifacts
+*.pem
+*.crx
+*.zip
+
+# Output Files
+sitemap.csv
+*.csv
+
+# Logs/Debug
+*.log
+
+# Editors
+.vscode/
+.idea/

@@ -1,0 +1,34 @@
+{
+    "manifest_version": 3,
+    "name": "Sitemap Generator & Exporter",
+    "version": "1.0.0",
+    "description": "Generate sitemaps and export them to Google Sheets.",
+    "permissions": [
+        "activeTab",
+        "scripting",
+        "storage",
+        "identity",
+        "downloads"
+    ],
+    "host_permissions": [
+        "<all_urls>"
+    ],
+    "action": {
+        "default_popup": "popup/index.html",
+        "default_title": "Sitemap Generator"
+    },
+    "background": {
+        "service_worker": "background/worker.js"
+    },
+    "oauth2": {
+        "client_id": "YOUR_CLIENT_ID_HERE",
+        "scopes": [
+            "https://www.googleapis.com/auth/spreadsheets"
+        ]
+    },
+    "icons": {
+        "16": "icons/icon16.png",
+        "48": "icons/icon48.png",
+        "128": "icons/icon128.png"
+    }
+}
