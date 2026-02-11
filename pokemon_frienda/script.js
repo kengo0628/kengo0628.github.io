@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const rarityFilter = document.getElementById('rarity-filter');
     const seriesFilter = document.getElementById('series-filter');
     const sortSelect = document.getElementById('sort-select');
+    const moveTypeFilter = document.getElementById('move-type-filter');
     const totalCount = document.getElementById('total-count');
 
     // Modal Elements
@@ -48,6 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Event Listeners
     searchInput.addEventListener('input', filterAndRender);
     typeFilter.addEventListener('change', filterAndRender);
+    moveTypeFilter.addEventListener('change', filterAndRender);
     rarityFilter.addEventListener('change', filterAndRender);
     seriesFilter.addEventListener('change', filterAndRender);
     sortSelect.addEventListener('change', filterAndRender);
@@ -63,6 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Populate Filters
             populateTypeFilter();
+            populateMoveTypeFilter();
             populateSeriesFilter();
 
             filterAndRender();
@@ -95,6 +98,31 @@ document.addEventListener('DOMContentLoaded', () => {
             option.value = t;
             option.textContent = t;
             typeFilter.appendChild(option);
+        });
+    }
+
+    function populateMoveTypeFilter() {
+        const moveTypes = new Set();
+        allData.forEach(item => {
+            if (item.MoveType) {
+                // Split multiple types if any (though usually one, handle similarly for safety)
+                const currentTypes = item.MoveType.replace(/"/g, '').split(/[,\s、]+/);
+                currentTypes.forEach(t => {
+                    const tClean = t.trim();
+                    if (tClean) moveTypes.add(tClean);
+                });
+            }
+        });
+
+        const sortedMoveTypes = Array.from(moveTypes).sort();
+
+        moveTypeFilter.innerHTML = '<option value="">全てのわざタイプ</option>';
+
+        sortedMoveTypes.forEach(t => {
+            const option = document.createElement('option');
+            option.value = t;
+            option.textContent = t;
+            moveTypeFilter.appendChild(option);
         });
     }
 
@@ -175,6 +203,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function filterAndRender() {
         const searchText = searchInput.value.toLowerCase();
         const typeValue = typeFilter.value; // Get Type Filter Value
+        const moveTypeValue = moveTypeFilter.value; // Get Move Type Filter Value
         const rarityValue = rarityFilter.value;
         const seriesValue = seriesFilter.value;
         const sortValue = sortSelect.value;
@@ -191,6 +220,12 @@ document.addEventListener('DOMContentLoaded', () => {
             if (typeValue) {
                 const itemTypes = item.Type ? item.Type.replace(/"/g, '').split(/[,\s、]+/).map(t => t.trim()) : [];
                 if (!itemTypes.includes(typeValue)) return false;
+            }
+
+            // Move Type Filter
+            if (moveTypeValue) {
+                const itemMoveTypes = item.MoveType ? item.MoveType.replace(/"/g, '').split(/[,\s、]+/).map(t => t.trim()) : [];
+                if (!itemMoveTypes.includes(moveTypeValue)) return false;
             }
 
             // Series Filter
@@ -239,6 +274,9 @@ document.addEventListener('DOMContentLoaded', () => {
             }
             if (sortValue === 'hp_desc') {
                 return (parseInt(b.HP) || 0) - (parseInt(a.HP) || 0);
+            }
+            if (sortValue === 'hp_asc') {
+                return (parseInt(a.HP) || 0) - (parseInt(b.HP) || 0);
             }
             return 0;
         });
