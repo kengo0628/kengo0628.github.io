@@ -34,14 +34,14 @@ ID,Name,ImageFile,OriginalURL,PokeEne,HP,ATK,DEF,SP.ATK,SP.DEF,Speed,Type,Move,M
 2-3-008,マホイップ,2-3-008_kira.webp,https://pokemonfrienda.com/new/img/bt3/2-3-008_kira.webp,284,152,79,98,141,155,3,フェアリー,マジカルシャイン,フェアリー,テラスタル,5,,ベストタッグ3だん
 2-3-009,ブリジュラス,2-3-009_kira.webp,https://pokemonfrienda.com/new/img/bt3/2-3-009_kira.webp,308,169,124,153,147,79,3,はがね,エレクトロビーム,でんき,テラスタル,5,,ベストタッグ3だん
 2-3-010,イルカマン,2-3-010_kira.webp,https://pokemonfrienda.com/new/img/bt3/2-3-010_kira.webp,240,178,83,85,64,74,3,みず,ウェーブタックル,みず,,5,,ベストタッグ3だん
-2-3-011,ピクシー,2-3-011_kira.webp,https://pokemonfrienda.com/new/img/bt3/2-3-011_kira.webp,240,163,79,82,105,100,3,ようせい,マジカルシャイン,ようせい,,4,,ベストタッグ3だん
+2-3-011,ピクシー,2-3-011_kira.webp,https://pokemonfrienda.com/new/img/bt3/2-3-011_kira.webp,240,163,79,82,105,100,3,フェアリー,マジカルシャイン,フェアリー,,4,,ベストタッグ3だん
 2-3-012,エビワラー,2-3-012_kira.webp,https://pokemonfrienda.com/new/img/bt3/2-3-012_kira.webp,232,118,118,90,42,123,3,かくとう,インファイト,かくとう,,4,,ベストタッグ3だん
 2-3-013,ストリンダー,2-3-013_kira.webp,https://pokemonfrienda.com/new/img/bt3/2-3-013_kira.webp,248,142,108,79,125,79,2,"でんき, どく",ヘドロウェーブ,どく,,4,,ベストタッグ3だん
 2-3-014,スピアー,2-3-014_kira.webp,https://pokemonfrienda.com/new/img/bt3/2-3-014_kira.webp,224,145,111,52,58,99,3,"むし, どく",シザークロス,むし,メガシンカ,4,,ベストタッグ3だん
 2-3-015,プテラ,2-3-015_kira.webp,https://pokemonfrienda.com/new/img/bt3/2-3-015_kira.webp,248,145,114,72,67,83,3,ひこう,そらをとぶ,ひこう,メガシンカ,4,,ベストタッグ3だん
-2-3-016,ヘルガー,2-3-016_kira.webp,https://pokemonfrienda.com/new/img/bt3/2-3-016_kira.webp,248,142,100,58,121,89,3,ダーク,かえんほうしゃ,ほのお,メガシンカ,4,,ベストタッグ3だん
+2-3-016,ヘルガー,2-3-016_kira.webp,https://pokemonfrienda.com/new/img/bt3/2-3-016_kira.webp,248,142,100,58,121,89,3,あく,かえんほうしゃ,ほのお,メガシンカ,4,,ベストタッグ3だん
 2-3-017,ドオー,2-3-017_kira.webp,https://pokemonfrienda.com/new/img/bt3/2-3-017_kira.webp,228,211,89,72,55,117,1,"どく, じめん",あなをほる,じめん,テラスタル,4,,ベストタッグ3だん
-2-3-018,ドドゲザン,2-3-018_kira.webp,https://pokemonfrienda.com/new/img/bt3/2-3-018_kira.webp,264,166,145,129,87,93,3,ダーク,テラバースト,テラスタル,テラスタル,4,,ベストタッグ3だん
+2-3-018,ドドゲザン,2-3-018_kira.webp,https://pokemonfrienda.com/new/img/bt3/2-3-018_kira.webp,264,166,145,129,87,93,3,あく,テラバースト,テラスタル,テラスタル,4,,ベストタッグ3だん
 2-3-019,ブロスター,2-3-019_kira.webp,https://pokemonfrienda.com/new/img/bt3/2-3-019_kira.webp,248,138,82,98,132,89,5,みず,スーパーアクアトルネード,みず,,4,,ベストタッグ3だん
 2-3-020,ジバコイル,2-3-020_kira.webp,https://pokemonfrienda.com/new/img/bt3/2-3-020_kira.webp,256,134,77,124,140,98,3,でんき,でんじほう,でんき,,4,,ベストタッグ3だん
 2-3-021,トゲキッス,2-3-021_kira.webp,https://pokemonfrienda.com/new/img/bt3/2-3-021_kira.webp,260,150,57,103,129,124,3,ひこう,ゴッドバード,ひこう,,4,,ベストタッグ3だん
@@ -83,7 +83,7 @@ ID,Name,ImageFile,OriginalURL,PokeEne,HP,ATK,DEF,SP.ATK,SP.DEF,Speed,Type,Move,M
 2-1-007,ギャラドス,2-1-007_kira.webp,https://pokemonfrienda.com/new/img/bt1/2-1-007_kira.webp,272,169,142,91,71,115,3,"みず, あく",かみくだく,あく,メガシンカ,5,,ベストタッグ1だん
 2-1-008,ルカリオ,2-1-008_kira.webp,https://pokemonfrienda.com/new/img/bt1/2-1-008_kira.webp,268,142,126,82,131,82,3,かくとう,インファイト,かくとう,メガシンカ,5,,ベストタッグ1だん
 2-1-009,サーナイト,2-1-009_kira.webp,https://pokemonfrienda.com/new/img/bt1/2-1-009_kira.webp,284,139,76,76,142,131,3,フェアリー,マジカルシャイン,フェアリー,テラスタル,5,,ベストタッグ1だん
-2-1-010,カミツオロチ,2-1-010_kira.webp,https://pokemonfrienda.com/new/img/bt1/2-1-010_kira.webp,272,181,93,126,137,83,2,くさ・ドラゴン,きまぐれレーザー,ドラゴン,テラスタル,5,,ベストタッグ1だん
+2-1-010,カミツオロチ,2-1-010_kira.webp,https://pokemonfrienda.com/new/img/bt1/2-1-010_kira.webp,272,181,93,126,137,83,2,"くさ, ドラゴン",きまぐれレーザー,ドラゴン,テラスタル,5,,ベストタッグ1だん
 2-1-011,メガニウム,2-1-011_kira.webp,https://pokemonfrienda.com/new/img/bt1/2-1-011_kira.webp,244,140,87,105,88,105,3,くさ,ソーラービーム,くさ,,4,,ベストタッグ1だん
 2-1-012,バクフーン,2-1-012_kira.webp,https://pokemonfrienda.com/new/img/bt1/2-1-012_kira.webp,248,138,89,83,114,90,3,ほのお,かえんほうしゃ,ほのお,,4,,ベストタッグ1だん
 2-1-013,オーダイル,2-1-013_kira.webp,https://pokemonfrienda.com/new/img/bt1/2-1-013_kira.webp,248,145,110,105,84,88,3,みず,ハイドロポンプ,みず,,4,,ベストタッグ1だん

@@ -255,7 +255,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 return (parseInt(b.PokeEne) || 0) - (parseInt(a.PokeEne) || 0);
             }
             if (sortValue === 'pokeene_asc') {
-                return (parseInt(a.PokeEne) || 0) - (parseInt(b.PokeEne) || 0);
+                const valA = parseInt(a.PokeEne) || 0;
+                const valB = parseInt(b.PokeEne) || 0;
+                if (valA === 0 && valB === 0) return 0;
+                if (valA === 0) return 1;
+                if (valB === 0) return -1;
+                return valA - valB;
             }
             if (sortValue === 'atk_desc') {
                 return (parseInt(b.ATK) || 0) - (parseInt(a.ATK) || 0);
@@ -276,7 +281,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 return (parseInt(b.HP) || 0) - (parseInt(a.HP) || 0);
             }
             if (sortValue === 'hp_asc') {
-                return (parseInt(a.HP) || 0) - (parseInt(b.HP) || 0);
+                const valA = parseInt(a.HP) || 0;
+                const valB = parseInt(b.HP) || 0;
+                if (valA === 0 && valB === 0) return 0;
+                if (valA === 0) return 1;
+                if (valB === 0) return -1;
+                return valA - valB;
             }
             return 0;
         });
