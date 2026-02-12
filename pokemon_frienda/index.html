@@ -71,6 +71,9 @@
                     <option value="hp_asc">HP (すくないじゅん)</option>
                 </select>
             </div>
+
+            <a href="https://docs.google.com/spreadsheets/d/your-sheet-id" target="_blank" class="admin-link"
+                style="display:none;">管理画面</a>
         </div>
 
         <!-- Stats Summary -->
@@ -89,6 +92,70 @@
         <span class="close">&times;</span>
         <img class="modal-content" id="modal-image">
         <div id="caption"></div>
+    </div>
+
+    <!-- Feedback Modal -->
+    <div id="feedback-modal" class="modal">
+        <div class="modal-content feedback-content">
+            <span class="close" onclick="closeFeedbackModal()">&times;</span>
+            <h2>まちがいをほうこく</h2>
+            <p>なおすところと、ただしいすうじをおしえてね！</p>
+            <input type="hidden" id="feedback-id">
+            <div class="form-group">
+                <label>ポケモン：</label>
+                <input type="text" id="feedback-name" readonly disabled>
+            </div>
+            <div class="form-group">
+                <label>なおすところ：</label>
+                <select id="feedback-field">
+                    <option value="HP">HP</option>
+                    <option value="ATK">こうげき</option>
+                    <option value="DEF">ぼうぎょ</option>
+                    <option value="SP.ATK">とくこう</option>
+                    <option value="SP.DEF">とくぼう</option>
+                    <option value="Speed">すばやさ</option>
+                    <option value="PokeEne">ポケエネ</option>
+                    <option value="Type">タイプ</option>
+                    <option value="MoveType">わざタイプ</option>
+                    <option value="Rarity">レア度（ほし）</option>
+                    <option value="Name">なまえ</option>
+                </select>
+            </div>
+            <div class="form-group" id="input-container-text">
+                <label>ただしいすうじ（もじ）：</label>
+                <input type="text" id="feedback-value" placeholder="例：150">
+            </div>
+
+            <!-- Rarity Select -->
+            <div class="form-group" id="input-container-rarity" style="display:none;">
+                <label>ただしいレア度：</label>
+                <select id="feedback-value-rarity">
+                    <option value="5">5</option>
+                    <option value="4">4</option>
+                    <option value="3">3</option>
+                    <option value="2">2</option>
+                    <option value="1">1</option>
+                    <option value="Special">スペシャル</option>
+                </select>
+            </div>
+
+            <!-- Type Multi-Select -->
+            <div class="form-group" id="input-container-type" style="display:none;">
+                <label>ただしいタイプ（最大2つ）：</label>
+                <div id="feedback-value-type-container" style="display: flex; flex-wrap: wrap; gap: 8px;">
+                    <!-- Populated by JS -->
+                </div>
+            </div>
+
+            <!-- Move Type Select -->
+            <div class="form-group" id="input-container-movetype" style="display:none;">
+                <label>ただしいわざタイプ：</label>
+                <select id="feedback-value-movetype">
+                    <!-- Populated by JS -->
+                </select>
+            </div>
+            <button id="submit-feedback-btn" onclick="submitFeedback()">そうしん</button>
+        </div>
     </div>
 
     <footer>

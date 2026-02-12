@@ -18,6 +18,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const captionText = document.getElementById('caption');
     const span = document.getElementsByClassName("close")[0];
 
+    // Feedback Modal Elements
+    const feedbackModal = document.getElementById('feedback-modal');
+    // GAS Web App URL
+    const GAS_URL = 'https://script.google.com/macros/s/AKfycbymHMAl3L-qMcFDI5xOdUY49deV3syDb8Bj8qMjuYypKamhVUdMKLmuum2DnMZ1IBnY/exec';
+
     // Close Modal Events
     if (span) {
         span.onclick = function () {
@@ -29,6 +34,9 @@ document.addEventListener('DOMContentLoaded', () => {
     window.onclick = function (event) {
         if (event.target == modal) {
             modal.style.display = "none";
+        }
+        if (event.target == feedbackModal) {
+            feedbackModal.style.display = "none";
         }
     }
 
@@ -362,7 +370,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             card.innerHTML = `
                 <div class="card-image" style="cursor: pointer;" onclick="openModal('${imageUrl}', '${item.Name}')">
-                    <img src="${imageUrl}" alt="${item.Name}" loading="lazy" onerror="this.style.display='none'">
+                     <img src="${imageUrl}" alt="${item.Name}" loading="lazy" onerror="this.style.display='none'">
                 </div>
                 <div class="card-content">
                     <div class="card-header">
@@ -391,6 +399,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             ${specialHtml}
                         </div>
                     </div>
+                    <button class="feedback-btn" onclick="showFeedbackModal('${item.ID}', '${item.Name}')">間違いを報告</button>
                 </div>
             `;
             cardsContainer.appendChild(card);
@@ -403,5 +412,161 @@ document.addEventListener('DOMContentLoaded', () => {
         modal.style.display = "block";
         modalImg.src = src;
         captionText.innerHTML = name;
+    }
+
+    // Populate Feedback Options
+    function populateFeedbackOptions() {
+        // Types
+        const typeContainer = document.getElementById('feedback-value-type-container');
+        typeContainer.innerHTML = '';
+        const types = new Set();
+        // Move Types
+        const moveTypeSelect = document.getElementById('feedback-value-movetype');
+        moveTypeSelect.innerHTML = '<option value="">選択してください</option>';
+        const moveTypes = new Set();
+
+        allData.forEach(item => {
+            if (item.Type) {
+                const currentTypes = item.Type.replace(/"/g, '').split(/[,\s、]+/);
+                currentTypes.forEach(t => { if (t.trim()) types.add(t.trim()); });
+            }
+            if (item.MoveType) {
+                const currentMoveTypes = item.MoveType.replace(/"/g, '').split(/[,\s、]+/);
+                currentMoveTypes.forEach(t => { if (t.trim()) moveTypes.add(t.trim()); });
+            }
+        });
+
+        // Sort and populate Types
+        Array.from(types).sort().forEach(t => {
+            const label = document.createElement('label');
+            label.style.display = 'inline-flex';
+            label.style.alignItems = 'center';
+            label.style.marginRight = '10px';
+            label.style.cursor = 'pointer';
+
+            const checkbox = document.createElement('input');
+            checkbox.type = 'checkbox';
+            checkbox.value = t;
+            checkbox.name = 'feedback-type';
+            checkbox.style.width = 'auto';
+            checkbox.style.marginRight = '4px';
+
+            // Limit to 2
+            checkbox.addEventListener('change', function () {
+                const checked = document.querySelectorAll('input[name="feedback-type"]:checked');
+                if (checked.length > 2) {
+                    this.checked = false;
+                    alert('タイプは2つまでしか選べません');
+                }
+            });
+
+            label.appendChild(checkbox);
+            label.appendChild(document.createTextNode(t));
+            typeContainer.appendChild(label);
+        });
+
+        // Sort and populate Move Types
+        Array.from(moveTypes).sort().forEach(t => {
+            const option = document.createElement('option');
+            option.value = t;
+            option.textContent = t;
+            moveTypeSelect.appendChild(option);
+        });
+    }
+
+    // Toggle Input Fields based on selection
+    document.getElementById('feedback-field').addEventListener('change', function () {
+        const field = this.value;
+        document.getElementById('input-container-text').style.display = 'none';
+        document.getElementById('input-container-rarity').style.display = 'none';
+        document.getElementById('input-container-type').style.display = 'none';
+        document.getElementById('input-container-movetype').style.display = 'none';
+
+        if (field === 'Rarity') {
+            document.getElementById('input-container-rarity').style.display = 'block';
+        } else if (field === 'Type') {
+            document.getElementById('input-container-type').style.display = 'block';
+        } else if (field === 'MoveType') {
+            document.getElementById('input-container-movetype').style.display = 'block';
+        } else {
+            document.getElementById('input-container-text').style.display = 'block';
+        }
+    });
+
+    window.showFeedbackModal = function (id, name) {
+        document.getElementById('feedback-id').value = id;
+        document.getElementById('feedback-name').value = name;
+
+        // Reset
+        document.getElementById('feedback-field').value = 'HP';
+        document.getElementById('feedback-field').dispatchEvent(new Event('change')); // Trigger toggle
+
+        document.getElementById('feedback-value').value = '';
+        document.getElementById('feedback-value-rarity').value = '5';
+        document.getElementById('feedback-value-movetype').value = '';
+        document.querySelectorAll('input[name="feedback-type"]').forEach(cb => cb.checked = false);
+
+        populateFeedbackOptions(); // Ensure options are loaded (idempotent-ish, or check if empty)
+
+        const feedbackModal = document.getElementById('feedback-modal');
+        feedbackModal.style.display = "block";
+    }
+
+    window.closeFeedbackModal = function () {
+        const feedbackModal = document.getElementById('feedback-modal');
+        feedbackModal.style.display = "none";
+    }
+
+    window.submitFeedback = function () {
+        const id = document.getElementById('feedback-id').value;
+        const name = document.getElementById('feedback-name').value;
+        const field = document.getElementById('feedback-field').value;
+
+        let value = '';
+
+        if (field === 'Rarity') {
+            value = document.getElementById('feedback-value-rarity').value;
+        } else if (field === 'Type') {
+            const checked = document.querySelectorAll('input[name="feedback-type"]:checked');
+            value = Array.from(checked).map(cb => cb.value).join(', ');
+        } else if (field === 'MoveType') {
+            value = document.getElementById('feedback-value-movetype').value;
+        } else {
+            value = document.getElementById('feedback-value').value;
+        }
+
+        if (!value) {
+            alert('正しい値を入力してください');
+            return;
+        }
+
+        const btn = document.getElementById('submit-feedback-btn');
+        btn.disabled = true;
+        btn.textContent = '送信中...';
+
+        // Construct URL for GET request (simpler for GAS Web App without CORS issues usually)
+        // Or POST with no-cors mode
+        const url = `${GAS_URL}?ID=${encodeURIComponent(id)}&Name=${encodeURIComponent(name)}&Field=${encodeURIComponent(field)}&Value=${encodeURIComponent(value)}`;
+
+        fetch(url, {
+            method: 'POST',
+            mode: 'no-cors', // Important for GAS
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded',
+            },
+            body: `ID=${encodeURIComponent(id)}&Name=${encodeURIComponent(name)}&Field=${encodeURIComponent(field)}&Value=${encodeURIComponent(value)}`
+        })
+            .then(() => {
+                alert('報告ありがとうございました！');
+                closeFeedbackModal();
+            })
+            .catch(err => {
+                console.error('Error:', err);
+                alert('送信に失敗しました。');
+            })
+            .finally(() => {
+                btn.disabled = false;
+                btn.textContent = '送信';
+            });
     }
 });

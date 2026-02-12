@@ -106,7 +106,7 @@ ID,Name,ImageFile,OriginalURL,PokeEne,HP,ATK,DEF,SP.ATK,SP.DEF,Speed,Type,Move,M
 1-5-005,ウネルミナモ,1-5-005_kira.webp,https://pokemonfrienda.com/new/img/5/1-5-005_kira.webp,272,159,88,96,130,88,3,みず,ハイドロポンプ,みず,テラスタル,4,,5だん
 1-5-006,ウガツホムラ,1-5-006_kira.webp,https://pokemonfrienda.com/new/img/5/1-5-006_kira.webp,272,165,120,126,70,88,3,ほのお,だいふんげき,ほのお,テラスタル,スペシャル,,5だん
 1-5-007,ボーマンダ,1-5-007_kira.webp,https://pokemonfrienda.com/new/img/5/1-5-007_kira.webp,276,155,140,85,115,85,5,ドラゴン,ドラゴンダイブ,ドラゴン,Zわざ,4,,5だん
-1-5-008,ジャラランガ,1-5-008_kira.webp,https://pokemonfrienda.com/new/img/5/1-5-008_kira.webp,,135,115,130,105,110,3,ドラゴン,ぜんりょくむそうげきれつけん,かくとう,Zわざ,4,,5だん
+1-5-008,ジャラランガ,1-5-008_kira.webp,https://pokemonfrienda.com/new/img/5/1-5-008_kira.webp,278,135,115,130,105,110,3,ドラゴン,ぜんりょくむそうげきれつけん,かくとう,Zわざ,4,,5だん
 1-5-009,イッカネズミ,1-5-009_kira.webp,https://pokemonfrienda.com/new/img/5/1-5-009_kira.webp,252,151,90,84,79,80,3,ノーマル,ネズミざん,ノーマル,,4,,5だん
 1-5-010,ヘイラッシャ,1-5-010_kira.webp,https://pokemonfrienda.com/new/img/5/1-5-010_kira.webp,264,226,113,129,75,75,5,みず,いっちょあがり,ノーマル,,スペシャル,,5だん
 1-5-011,ジャローダ,1-5-011_kira.webp,https://pokemonfrienda.com/new/img/5/1-5-011_kira.webp,232,127,75,94,75,94,3,くさ,ブルームシャインエクストラ,くさ,Zわざ,3,,5だん
@@ -115,7 +115,7 @@ ID,Name,ImageFile,OriginalURL,PokeEne,HP,ATK,DEF,SP.ATK,SP.DEF,Speed,Type,Move,M
 1-5-014,アラブルタケ,1-5-014_kira.webp,https://pokemonfrienda.com/new/img/5/1-5-014_kira.webp,240,158,121,96,77,86,3,"くさ, あく",ソーラービーム,くさ,,4,,5だん
 1-5-015,スナノケガワ,1-5-015_kira.webp,https://pokemonfrienda.com/new/img/5/1-5-015_kira.webp,240,134,79,94,116,83,3,じめん,だいちのちから,じめん,,4,,5だん
 1-5-016,テツノワダチ,1-5-016_kira.webp,https://pokemonfrienda.com/new/img/5/1-5-016_kira.webp,240,138,108,115,71,69,5,はがね,アイアンヘッド,はがね,,4,,5だん
-1-5-017,テツノドクガ,1-5-017_kira.webp,https://pokemonfrienda.com/new/img/5/1-5-017_kira.webp,240,129,69,60,133,106,5,ほのおどく,ヘドロウェーブ,どく,,3,,5だん
+1-5-017,テツノドクガ,1-5-017_kira.webp,https://pokemonfrienda.com/new/img/5/1-5-017_kira.webp,240,129,69,60,133,106,5,"ほのお, どく",ヘドロウェーブ,どく,,3,,5だん
 1-5-018,エルレイド,1-5-018_kira.webp,https://pokemonfrienda.com/new/img/5/1-5-018_kira.webp,,,,,,,,,,,,,,
 1-5-019,ブリムオン,1-5-019_kira.webp,https://pokemonfrienda.com/new/img/5/1-5-019_kira.webp,,,,,,,,,,,,,,5だん
 1-5-020,ハラバリー,1-5-020_kira.webp,https://pokemonfrienda.com/new/img/5/1-5-020_kira.webp,,,,,,,,,,,,,,5だん
