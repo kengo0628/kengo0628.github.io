@@ -44,6 +44,18 @@ def apply_feedback():
             field = row['Field']
             value = row['Value']
 
+            # ID Formatting Fix: Handle Google Sheets/Excel date auto-formatting
+            # Example: 1-5-2015 -> 1-5-015
+            if item_id not in data and item_id.count('-') == 2:
+                parts = item_id.split('-')
+                if len(parts[2]) == 4 and parts[2].startswith('20'):
+                    # Try converting 20XX -> 0XX
+                    new_suffix = '0' + parts[2][2:]
+                    fixed_id = f"{parts[0]}-{parts[1]}-{new_suffix}"
+                    if fixed_id in data:
+                        print(f"Auto-corrected ID: {item_id} -> {fixed_id}")
+                        item_id = fixed_id
+
             if item_id in data:
                 if field in fieldnames:
                     old_value = data[item_id][field]
