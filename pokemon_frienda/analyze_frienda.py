@@ -279,6 +279,12 @@ def main():
             updated_rows.append(merged_row)
             continue
 
+        # Merge partial data if exists (to preserve manual edits)
+        if item_id in completed_data:
+            for k, v in completed_data[item_id].items():
+                if v: # Only overwrite with non-empty values from completed_data
+                     row[k] = v
+
         image_filename = row['ImageFile']
         image_path = os.path.join(IMAGE_DIR, image_filename)
         
@@ -295,7 +301,7 @@ def main():
         
         if os.path.exists(image_path):
             # Only analyze if data is missing (optional optimization)
-            # For now, we process all to ensure we get data
+            # But here we want to fill empty fields
             
             try:
                 data = analyze_image(model, image_path)
@@ -306,18 +312,24 @@ def main():
                 continue
             
             if data:
-                row['PokeEne'] = data.get('PokeEne', '')
-                row['HP'] = data.get('HP', '')
-                row['ATK'] = data.get('ATK', '')
-                row['DEF'] = data.get('DEF', '')
-                row['SP.ATK'] = data.get('SP_ATK', '') # specific key handling
-                row['SP.DEF'] = data.get('SP_DEF', '')
-                row['Speed'] = data.get('Speed', '')
-                row['Type'] = data.get('Type', '')
-                row['Move'] = data.get('Move', '')
-                row['MoveType'] = data.get('MoveType', '')
-                row['Special'] = data.get('Special', '')
-                row['Rarity'] = data.get('Rarity', '')
+                # Helper to update only if empty
+                def update_if_empty(key, val):
+                    if not row.get(key) and val:
+                        row[key] = val
+
+                update_if_empty('PokeEne', data.get('PokeEne', ''))
+                update_if_empty('HP', data.get('HP', ''))
+                update_if_empty('ATK', data.get('ATK', ''))
+                update_if_empty('DEF', data.get('DEF', ''))
+                update_if_empty('SP.ATK', data.get('SP_ATK', ''))
+                update_if_empty('SP.DEF', data.get('SP_DEF', ''))
+                update_if_empty('Speed', data.get('Speed', ''))
+                update_if_empty('Type', data.get('Type', ''))
+                update_if_empty('Move', data.get('Move', ''))
+                update_if_empty('MoveType', data.get('MoveType', ''))
+                update_if_empty('Special', data.get('Special', ''))
+                update_if_empty('Rarity', data.get('Rarity', ''))
+
                 print(f"  -> Extracted: {row['Name']} (PE: {row['PokeEne']}, Rarity: {row['Rarity']}, Move: {row['Move']}, Type: {row['MoveType']}, Special: {row['Special']})")
             
             # Rate limiting / politeness

@@ -20,3 +20,4 @@ frienda_images/
 *.csv
 # Whitelist the final output for the web app
 !frienda_database_complete.csv
+FEEDBACK_WORKFLOW.md
