@@ -151,6 +151,10 @@ def main():
             if '_kira' in filename:
                 score += 10
             
+            # User request: Prioritize Special (starts with p)
+            if item_id.lower().startswith('p'):
+                score += 8
+
             if 'A' in item_id and item_id.endswith('A'):
                 score += 5
             
