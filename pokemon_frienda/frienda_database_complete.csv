@@ -9,7 +9,7 @@ ID,Name,ImageFile,OriginalURL,PokeEne,HP,ATK,DEF,SP.ATK,SP.DEF,Speed,Type,Move,M
 2-4-008,ゼラオラ,2-4-008_kira.webp,https://pokemonfrienda.com/new/img/bt4/2-4-008_kira.webp,316,170,134,92,123,97,5,でんき,プラズマフィスト,でんき,Zわざ,5,,ベストタッグ4だん
 2-4-009,カビゴン,2-4-009_kira.webp,https://pokemonfrienda.com/new/img/bt4/2-4-009_kira.webp,296,262,137,83,83,137,1,ノーマル,ギガインパクト,ノーマル,テラスタル,5,,ベストタッグ4だん
 2-4-010,シェイミ,2-4-010_kira.webp,https://pokemonfrienda.com/new/img/bt4/2-4-010_kira.webp,316,184,124,92,144,92,3,くさ,シードフレア,くさ,テラスタル,5,,ベストタッグ4だん
-2-4-011,ファイアロー,2-4-011_kira.webp,https://pokemonfrienda.com/new/img/bt4/2-4-011_kira.webp,252,148,92,81,84,79,3,"ほのお,ひこう",ブレイブバード,ひこう,,4,,ベストタッグ4だん
+2-4-011,ファイアロー,2-4-011_kira.webp,https://pokemonfrienda.com/new/img/bt4/2-4-011_kira.webp,252,148,92,81,84,79,3,"ほのお, ひこう",ブレイブバード,ひこう,,4,,ベストタッグ4だん
 2-4-012,フライゴン,2-4-012_kira.webp,https://pokemonfrienda.com/new/img/bt4/2-4-012_kira.webp,256,147,111,89,89,89,3,じめん,10まんバリキ,じめん,タッグわざ,4,,ベストタッグ4だん
 2-4-013,ウツボット,2-4-013_kira.webp,https://pokemonfrienda.com/new/img/bt4/2-4-013_kira.webp,248,150,118,75,113,80,2,"くさ, どく",パワーウィップ,くさ,メガシンカ,4,,ベストタッグ4だん
 2-4-014,チルタリス,2-4-014_kira.webp,https://pokemonfrienda.com/new/img/bt4/2-4-014_kira.webp,248,145,80,102,80,118,3,"ドラゴン, ひこう",りゅうのはどう,ドラゴン,メガシンカ,4,,ベストタッグ4だん
@@ -82,7 +82,7 @@ ID,Name,ImageFile,OriginalURL,PokeEne,HP,ATK,DEF,SP.ATK,SP.DEF,Speed,Type,Move,M
 2-1-006,ゲンガー,2-1-006_kira.webp,https://pokemonfrienda.com/new/img/bt1/2-1-006_kira.webp,260,133,77,72,150,89,3,ゴースト,シャドーボール,ゴースト,メガシンカ,5,,ベストタッグ1だん
 2-1-007,ギャラドス,2-1-007_kira.webp,https://pokemonfrienda.com/new/img/bt1/2-1-007_kira.webp,272,169,142,91,71,115,3,"みず, あく",かみくだく,あく,メガシンカ,5,,ベストタッグ1だん
 2-1-008,ルカリオ,2-1-008_kira.webp,https://pokemonfrienda.com/new/img/bt1/2-1-008_kira.webp,268,142,126,82,131,82,3,"かくとう, はがね",インファイト,かくとう,メガシンカ,5,,ベストタッグ1だん
-2-1-009,サーナイト,2-1-009_kira.webp,https://pokemonfrienda.com/new/img/bt1/2-1-009_kira.webp,264,139,76,76,142,131,3,フェアリー,マジカルシャイン,フェアリー,テラスタル,5,,ベストタッグ1だん
+2-1-009,サーナイト,2-1-009_kira.webp,https://pokemonfrienda.com/new/img/bt1/2-1-009_kira.webp,264,139,76,76,142,131,3,"エスパー, フェアリー",マジカルシャイン,フェアリー,テラスタル,5,,ベストタッグ1だん
 2-1-010,カミツオロチ,2-1-010_kira.webp,https://pokemonfrienda.com/new/img/bt1/2-1-010_kira.webp,272,181,93,126,137,83,2,"くさ, ドラゴン",きまぐれレーザー,ドラゴン,テラスタル,5,,ベストタッグ1だん
 2-1-011,メガニウム,2-1-011_kira.webp,https://pokemonfrienda.com/new/img/bt1/2-1-011_kira.webp,244,140,87,105,88,105,3,くさ,ソーラービーム,くさ,,4,,ベストタッグ1だん
 2-1-012,バクフーン,2-1-012_kira.webp,https://pokemonfrienda.com/new/img/bt1/2-1-012_kira.webp,248,138,89,83,114,90,3,ほのお,かえんほうしゃ,ほのお,,4,,ベストタッグ1だん
@@ -104,9 +104,9 @@ ID,Name,ImageFile,OriginalURL,PokeEne,HP,ATK,DEF,SP.ATK,SP.DEF,Speed,Type,Move,M
 1-5-003,テラパゴス,1-5-003_kira.webp,https://pokemonfrienda.com/new/img/5/1-5-003_kira.webp,276,155,100,115,110,115,2,ノーマル,テラクラスター,ノーマル,テラスタル,5,,5だん
 1-5-004,タケルライコ,1-5-004_kira.webp,https://pokemonfrienda.com/new/img/5/1-5-004_kira.webp,272,185,78,96,142,84,3,"でんき, ドラゴン",かみなり,でんき,テラスタル,5,,5だん
 1-5-005,ウネルミナモ,1-5-005_kira.webp,https://pokemonfrienda.com/new/img/5/1-5-005_kira.webp,272,159,88,96,130,88,3,みず,ハイドロポンプ,みず,テラスタル,5,,5だん
-1-5-006,ウガツホムラ,1-5-006_kira.webp,https://pokemonfrienda.com/new/img/5/1-5-006_kira.webp,272,165,120,126,70,88,3,ほのお,だいふんげき,ほのお,テラスタル,5,,5だん
-1-5-007,ボーマンダ,1-5-007_kira.webp,https://pokemonfrienda.com/new/img/5/1-5-007_kira.webp,276,155,140,85,115,85,5,"ひこう, ドラゴン",ドラゴンダイブ,ドラゴン,Zわざ,5,,5だん
-1-5-008,ジャラランガ,1-5-008_kira.webp,https://pokemonfrienda.com/new/img/5/1-5-008_kira.webp,276,135,115,130,105,110,3,ドラゴン,ぜんりょくむそうげきれつけん,かくとう,Zわざ,5,,5だん
+1-5-006,ウガツホムラ,1-5-006_kira.webp,https://pokemonfrienda.com/new/img/5/1-5-006_kira.webp,272,165,120,126,70,88,3,"ほのお, ドラゴン",だいふんげき,ほのお,テラスタル,5,,5だん
+1-5-007,ボーマンダ,1-5-007_kira.webp,https://pokemonfrienda.com/new/img/5/1-5-007_kira.webp,276,155,140,85,115,85,5,"ドラゴン, ひこう",ドラゴンダイブ,ドラゴン,Zわざ,5,,5だん
+1-5-008,ジャラランガ,1-5-008_kira.webp,https://pokemonfrienda.com/new/img/5/1-5-008_kira.webp,276,135,115,130,105,110,3,"ドラゴン, かくとう",ぜんりょくむそうげきれつけん,かくとう,Zわざ,5,,5だん
 1-5-009,イッカネズミ,1-5-009_kira.webp,https://pokemonfrienda.com/new/img/5/1-5-009_kira.webp,252,151,90,84,79,80,3,ノーマル,ネズミざん,ノーマル,,5,,5だん
 1-5-010,ヘイラッシャ,1-5-010_kira.webp,https://pokemonfrienda.com/new/img/5/1-5-010_kira.webp,264,226,113,129,75,75,1,みず,いっちょあがり,ノーマル,,5,,5だん
 1-5-011,ジャローダ,1-5-011_kira.webp,https://pokemonfrienda.com/new/img/5/1-5-011_kira.webp,232,127,75,94,75,94,3,くさ,ブルームシャインエクストラ,くさ,Zわざ,4,,5だん
@@ -116,7 +116,7 @@ ID,Name,ImageFile,OriginalURL,PokeEne,HP,ATK,DEF,SP.ATK,SP.DEF,Speed,Type,Move,M
 1-5-015,スナノケガワ,1-5-015_kira.webp,https://pokemonfrienda.com/new/img/5/1-5-015_kira.webp,240,134,79,94,116,83,3,"じめん, でんき",だいちのちから,じめん,,4,,5だん
 1-5-016,テツノワダチ,1-5-016_kira.webp,https://pokemonfrienda.com/new/img/5/1-5-016_kira.webp,240,138,108,115,71,69,5,"じめん, はがね",アイアンヘッド,はがね,,4,,5だん
 1-5-017,テツノドクガ,1-5-017_kira.webp,https://pokemonfrienda.com/new/img/5/1-5-017_kira.webp,240,129,69,60,133,106,5,"ほのお, どく",ヘドロウェーブ,どく,,4,,5だん
-1-5-018,エルレイド,1-5-018_kira.webp,https://pokemonfrienda.com/new/img/5/1-5-018_kira.webp,228,120,122,66,66,113,3,かくとう,インファイト,かくとう,テラスタル,4,,5だん
+1-5-018,エルレイド,1-5-018_kira.webp,https://pokemonfrienda.com/new/img/5/1-5-018_kira.webp,228,120,122,66,66,113,3,"エスパー, かくとう",インファイト,かくとう,テラスタル,4,,5だん
 1-5-019,ブリムオン,1-5-019_kira.webp,https://pokemonfrienda.com/new/img/5/1-5-019_kira.webp,224,110,89,94,132,101,1,フェアリー,テラバースト,フェアリー,テラスタル,4,,5だん
 1-5-020,ハラバリー,1-5-020_kira.webp,https://pokemonfrienda.com/new/img/5/1-5-020_kira.webp,220,159,65,90,101,83,3,でんき,１０まんボルト,でんき,テラスタル,4,,5だん
 1-5-021,シャリタツ,1-5-021_kira.webp,https://pokemonfrienda.com/new/img/5/1-5-021_kira.webp,216,123,53,62,120,86,2,ドラゴン,りゅうのはどう,ドラゴン,,4,,5だん
@@ -131,18 +131,18 @@ ID,Name,ImageFile,OriginalURL,PokeEne,HP,ATK,DEF,SP.ATK,SP.DEF,Speed,Type,Move,M
 1-4-005,テツノイサハ,1-4-005_kira.webp,https://pokemonfrienda.com/new/img/4/1-4-005_kira.webp,260,144,129,89,72,108,3,くさ,リーフブレード,くさ,テラスタル,5,,4だん
 1-4-006,テツノイワオ,1-4-006_kira.webp,https://pokemonfrienda.com/new/img/4/1-4-006_kira.webp,260,144,120,81,70,108,3,いわ,ストーンエッジ,いわ,テラスタル,5,,4だん
 1-4-007,テツノカシラ,1-4-007_kira.webp,https://pokemonfrienda.com/new/img/4/1-4-007_kira.webp,260,144,74,101,122,108,3,はがね,タキオンカッター,はがね,テラスタル,5,,4だん
-1-4-008,バンギラス,1-4-008_kira.webp,https://pokemonfrienda.com/new/img/4/1-4-008_kira.webp,264,154,133,110,96,101,3,いわ,ストーンエッジ,いわ,Zわざ,5,,4だん
-1-4-009,メタグロス,1-4-009_kira.webp,https://pokemonfrienda.com/new/img/4/1-4-009_kira.webp,264,134,134,129,96,91,3,はがね,コメットパンチ,はがね,Zわざ,5,,4だん
-1-4-010,ウガツホムラ,1-4-010_kira.webp,https://pokemonfrienda.com/new/img/4/1-4-010_kira.webp,260,158,115,121,67,84,3,ほのお,だいふんげき,ほのお,,5,,4だん
+1-4-008,バンギラス,1-4-008_kira.webp,https://pokemonfrienda.com/new/img/4/1-4-008_kira.webp,264,154,133,110,96,101,3,"いわ, あく",ストーンエッジ,いわ,Zわざ,5,,4だん
+1-4-009,メタグロス,1-4-009_kira.webp,https://pokemonfrienda.com/new/img/4/1-4-009_kira.webp,264,134,134,129,96,91,3,"はがね, エスパー",コメットパンチ,はがね,Zわざ,5,,4だん
+1-4-010,ウガツホムラ,1-4-010_kira.webp,https://pokemonfrienda.com/new/img/4/1-4-010_kira.webp,260,158,115,121,67,84,3,"ほのお, ドラゴン",だいふんげき,ほのお,,5,,4だん
 1-4-011,ブリガロン,1-4-011_kira.webp,https://pokemonfrienda.com/new/img/4/1-4-011_kira.webp,216,131,99,112,70,71,3,"くさ, かくとう",アームハンマー,かくとう,,4,,4だん
-1-4-012,マフォクシー,1-4-012_kira.webp,https://pokemonfrienda.com/new/img/4/1-4-012_kira.webp,220,120,65,68,105,93,3,ほのお,だいもんじ,ほのお,,4,,4だん
-1-4-013,ゲッコウガ,1-4-013_kira.webp,https://pokemonfrienda.com/new/img/4/1-4-013_kira.webp,216,117,88,63,95,67,3,みず,みずしゅりけん,みず,,4,,4だん
+1-4-012,マフォクシー,1-4-012_kira.webp,https://pokemonfrienda.com/new/img/4/1-4-012_kira.webp,220,120,65,68,105,93,3,"ほのお, エスパー",だいもんじ,ほのお,,4,,4だん
+1-4-013,ゲッコウガ,1-4-013_kira.webp,https://pokemonfrienda.com/new/img/4/1-4-013_kira.webp,216,117,88,63,95,67,3,"みず, あく",みずしゅりけん,みず,,4,,4だん
 1-4-014,サケブシッポ,1-4-014_kira.webp,https://pokemonfrienda.com/new/img/4/1-4-014_kira.webp,224,151,60,90,60,103,3,フェアリー,じゃれつく,フェアリー,,4,,4だん
 1-4-015,ハバタクカミ,1-4-015_kira.webp,https://pokemonfrienda.com/new/img/4/1-4-015_kira.webp,228,100,52,52,121,121,5,"ゴースト, フェアリー",シャドーボール,ゴースト,,4,,4だん
 1-4-016,テツノツツミ,1-4-016_kira.webp,https://pokemonfrienda.com/new/img/4/1-4-016_kira.webp,228,101,73,103,111,56,3,"こおり, みず",れいとうビーム,こおり,,4,,4だん
 1-4-017,テツノカイナ,1-4-017_kira.webp,https://pokemonfrienda.com/new/img/4/1-4-017_kira.webp,228,185,125,97,48,63,1,"かくとう, でんき",インファイト,かくとう,,4,,4だん
 1-4-018,バウッツェル,1-4-018_kira.webp,https://pokemonfrienda.com/new/img/4/1-4-018_kira.webp,204,106,77,108,50,77,3,フェアリー,じゃれつく,フェアリー,テラスタル,4,,4だん
-1-4-019,デカヌチャン,1-4-019_kira.webp,https://pokemonfrienda.com/new/img/4/1-4-019_kira.webp,208,128,71,72,66,97,3,はがね,デカハンマー,はがね,テラスタル,4,,4だん
+1-4-019,デカヌチャン,1-4-019_kira.webp,https://pokemonfrienda.com/new/img/4/1-4-019_kira.webp,208,128,71,72,66,97,3,"フェアリー, はがね",デカハンマー,はがね,テラスタル,4,,4だん
 1-4-020,オンバーン,1-4-020_kira.webp,https://pokemonfrienda.com/new/img/4/1-4-020_kira.webp,220,128,66,75,90,75,3,"ひこう, ドラゴン",エアスラッシュ,ひこう,テラスタル,4,,4だん
 1-4-021,ギガイアス,1-4-021_kira.webp,https://pokemonfrienda.com/new/img/4/1-4-021_kira.webp,212,128,123,119,57,75,1,いわ,ストーンエッジ,いわ,Zわざ,4,,4だん
 1-4-022,シビルドン,1-4-022_kira.webp,https://pokemonfrienda.com/new/img/4/1-4-022_kira.webp,212,128,106,75,97,75,3,でんき,でんじほう,でんき,Zわざ,4,,4だん
@@ -152,13 +152,13 @@ ID,Name,ImageFile,OriginalURL,PokeEne,HP,ATK,DEF,SP.ATK,SP.DEF,Speed,Type,Move,M
 1-3-001,テラパゴス,1-3-001_kira.webp,https://pokemonfrienda.com/new/img/3/1-3-001_kira.webp,256,146,94,108,103,108,2,みず,テラクラスター,みず,テラスタル,5,,3だん
 1-3-002,オーガポン,1-3-002_kira.webp,https://pokemonfrienda.com/new/img/3/1-3-002_kira.webp,240,132,117,83,61,95,3,くさ,ツタこんぼう,ほのお,テラスタル,5,,3だん
 1-3-003,デオキシス,1-3-003_kira.webp,https://pokemonfrienda.com/new/img/3/1-3-003_kira.webp,260,104,146,52,146,52,3,エスパー,サイコブースト,エスパー,テラスタル,5,,3だん
-1-3-004,ケルディオ,1-3-004_kira.webp,https://pokemonfrienda.com/new/img/3/1-3-004_kira.webp,248,142,72,89,126,89,3,みず,しんぴのつるぎ,かくとう,Zわざ,5,,3だん
+1-3-004,ケルディオ,1-3-004_kira.webp,https://pokemonfrienda.com/new/img/3/1-3-004_kira.webp,248,142,72,89,126,89,3,"みず, かくとう",しんぴのつるぎ,かくとう,Zわざ,5,,3だん
 1-3-005,ザルード,1-3-005_kira.webp,https://pokemonfrienda.com/new/img/3/1-3-005_kira.webp,258,155,117,103,70,94,3,くさ,パワーウィップ,くさ,,5,,3だん
-1-3-006,ドドゲザン,1-3-006_kira.webp,https://pokemonfrienda.com/new/img/3/1-3-006_kira.webp,240,151,131,117,61,84,2,あく,ドゲザン,あく,スーパーレジェンド,5,,3だん
+1-3-006,ドドゲザン,1-3-006_kira.webp,https://pokemonfrienda.com/new/img/3/1-3-006_kira.webp,240,151,131,117,61,84,2,"あく, はがね",ドゲザン,あく,スーパーレジェンド,5,,3だん
 1-3-007,リザードン,1-3-007_kira.webp,https://pokemonfrienda.com/new/img/3/1-3-007_kira.webp,232,130,83,78,107,84,3,"ほのお, ひこう",かえんほうしゃ,ほのお,テラスタル,5,,3だん
 1-3-008,トドロクツキ,1-3-008_kira.webp,https://pokemonfrienda.com/new/img/3/1-3-008_kira.webp,252,155,135,71,58,99,3,ドラゴン,じごくづき,あく,テラスタル,5,,3だん
 1-3-009,テツノブジン,1-3-009_kira.webp,https://pokemonfrienda.com/new/img/3/1-3-009_kira.webp,252,126,127,89,117,61,3,かくとう,インファイト,かくとう,テラスタル,5,,3だん
-1-3-010,レックウザ,1-3-010_kira.webp,https://pokemonfrienda.com/new/img/3/1-3-010_kira.webp,272,146,137,84,137,84,3,ドラゴン,ガリョウテンセイ,ひこう,,5,,3だん
+1-3-010,レックウザ,1-3-010_kira.webp,https://pokemonfrienda.com/new/img/3/1-3-010_kira.webp,272,146,137,84,137,84,3,"ドラゴン, ひこう",ガリョウテンセイ,ひこう,,5,,3だん
 1-3-011,ドダイトス,1-3-011_kira.webp,https://pokemonfrienda.com/new/img/3/1-3-011_kira.webp,200,128,94,91,66,74,3,"くさ, じめん",リーフストーム,くさ,Zわざ,4,,3だん
 1-3-012,ゴウカザル,1-3-012_kira.webp,https://pokemonfrienda.com/new/img/3/1-3-012_kira.webp,204,113,90,63,90,63,3,ほのお,インファイト,かくとう,Zわざ,4,,3だん
 1-3-013,エンペルト,1-3-013_kira.webp,https://pokemonfrienda.com/new/img/3/1-3-013_kira.webp,204,119,75,77,96,87,3,"みず, はがね",ラスターカノン,はがね,,4,,3だん
@@ -180,7 +180,7 @@ ID,Name,ImageFile,OriginalURL,PokeEne,HP,ATK,DEF,SP.ATK,SP.DEF,Speed,Type,Move,M
 1-2-004,オーガポン,1-2-004_kira.webp,https://pokemonfrienda.com/new/img/2/1-2-004_kira.webp,228,127,113,80,59,81,3,くさ,ツタこんぼう,くさ,テラスタル,5,,2だん
 1-2-005,オーガポン,1-2-005_kira.webp,https://pokemonfrienda.com/new/img/2/1-2-005_kira.webp,228,127,113,80,59,91,3,"くさ, いわ",ツタこんぼう,くさ,テラスタル,5,,2だん
 1-2-006,メルメタル,1-2-006_kira.webp,https://pokemonfrienda.com/new/img/2/1-2-006_kira.webp,240,172,130,130,75,62,3,はがね,ダブルパンツァー,はがね,,5,,2だん
-1-2-007,デカヌチャン,1-2-007_kira.webp,https://pokemonfrienda.com/new/img/2/1-2-007_kira.webp,212,131,72,74,68,99,3,"はがね, フェアリー",デカハンマー,はがね,,5,,2だん
+1-2-007,デカヌチャン,1-2-007_kira.webp,https://pokemonfrienda.com/new/img/2/1-2-007_kira.webp,212,131,72,74,68,99,3,"フェアリー, はがね",デカハンマー,はがね,,5,,2だん
 1-2-008,ブリガロン,1-2-008_kira.webp,https://pokemonfrienda.com/new/img/2/1-2-008_kira.webp,220,134,101,114,71,72,3,"くさ, かくとう",アームハンマー,かくとう,Zわざ,5,,2だん
 1-2-009,マフォクシー,1-2-009_kira.webp,https://pokemonfrienda.com/new/img/2/1-2-009_kira.webp,224,122,67,69,107,95,3,"ほのお, エスパー",だいもんじ,ほのお,Zわざ,5,,2だん
 1-2-010,ゲッコウガ,1-2-010_kira.webp,https://pokemonfrienda.com/new/img/2/1-2-010_kira.webp,220,119,90,65,97,68,3,"みず, あく",スーパーアクアトルネード,みず,Zわざ,5,,2だん
@@ -194,13 +194,13 @@ ID,Name,ImageFile,OriginalURL,PokeEne,HP,ATK,DEF,SP.ATK,SP.DEF,Speed,Type,Move,M
 1-2-018,アーマーガア,1-2-018_kira.webp,https://pokemonfrienda.com/new/img/2/1-2-018_kira.webp,180,122,71,84,45,69,3,"ひこう, はがね",ブレイブバード,ひこう,テラスタル,4,,2だん
 2-4-026,ハリマロン,2-4-026.webp,https://pokemonfrienda.com/new/img/bt4/2-4-026.webp,,,,,,,,,,,,,,ベストタッグ4だん
 2-4-027,ハリボーグ,2-4-027.webp,https://pokemonfrienda.com/new/img/bt4/2-4-027.webp,,,,,,,,,,,,,,ベストタッグ4だん
-2-4-028,ブリガロン,2-4-028.webp,https://pokemonfrienda.com/new/img/bt4/2-4-028.webp,,,,,,,,,,,,,,ベストタッグ4だん
+2-4-028,ブリガロン,2-4-028.webp,https://pokemonfrienda.com/new/img/bt4/2-4-028.webp,,,,,,,,"くさ, かくとう",,,,,,ベストタッグ4だん
 2-4-029,フォッコ,2-4-029.webp,https://pokemonfrienda.com/new/img/bt4/2-4-029.webp,,,,,,,,,,,,,,ベストタッグ4だん
 2-4-030,テールナー,2-4-030.webp,https://pokemonfrienda.com/new/img/bt4/2-4-030.webp,,,,,,,,,,,,,,ベストタッグ4だん
-2-4-031,マフォクシー,2-4-031.webp,https://pokemonfrienda.com/new/img/bt4/2-4-031.webp,,,,,,,,,,,,,,ベストタッグ4だん
+2-4-031,マフォクシー,2-4-031.webp,https://pokemonfrienda.com/new/img/bt4/2-4-031.webp,,,,,,,,"ほのお, エスパー",,,,,,ベストタッグ4だん
 2-4-032,ケロマツ,2-4-032.webp,https://pokemonfrienda.com/new/img/bt4/2-4-032.webp,,,,,,,,,,,,,,ベストタッグ4だん
 2-4-033,ゲコガシラ,2-4-033.webp,https://pokemonfrienda.com/new/img/bt4/2-4-033.webp,,,,,,,,,,,,,,ベストタッグ4だん
-2-4-034,ゲッコウガ,2-4-034.webp,https://pokemonfrienda.com/new/img/bt4/2-4-034.webp,,,,,,,,,,,,,,ベストタッグ4だん
+2-4-034,ゲッコウガ,2-4-034.webp,https://pokemonfrienda.com/new/img/bt4/2-4-034.webp,,,,,,,,"みず, あく",,,,,,ベストタッグ4だん
 2-4-035,ピカチュウ,2-4-035.webp,https://pokemonfrienda.com/new/img/bt4/2-4-035.webp,,,,,,,,,,,,,,ベストタッグ4だん
 2-4-036,イーブイ,2-4-036.webp,https://pokemonfrienda.com/new/img/bt4/2-4-036.webp,,,,,,,,,,,,,,ベストタッグ4だん
 2-4-037,ニンフィア,2-4-037.webp,https://pokemonfrienda.com/new/img/bt4/2-4-037.webp,,,,,,,,,,,,,,ベストタッグ4だん
@@ -212,7 +212,7 @@ ID,Name,ImageFile,OriginalURL,PokeEne,HP,ATK,DEF,SP.ATK,SP.DEF,Speed,Type,Move,M
 2-4-043,レントラー,2-4-043.webp,https://pokemonfrienda.com/new/img/bt4/2-4-043.webp,,,,,,,,,,,,,,ベストタッグ4だん
 2-4-044,メグロコ,2-4-044.webp,https://pokemonfrienda.com/new/img/bt4/2-4-044.webp,,,,,,,,,,,,,,ベストタッグ4だん
 2-4-045,ワルビル,2-4-045.webp,https://pokemonfrienda.com/new/img/bt4/2-4-045.webp,,,,,,,,,,,,,,ベストタッグ4だん
-2-4-046,ワルビアル,2-4-046.webp,https://pokemonfrienda.com/new/img/bt4/2-4-046.webp,,,,,,,,,,,,,,ベストタッグ4だん
+2-4-046,ワルビアル,2-4-046.webp,https://pokemonfrienda.com/new/img/bt4/2-4-046.webp,,,,,,,,"あく, じめん",,,,,,ベストタッグ4だん
 2-4-047,キバゴ,2-4-047.webp,https://pokemonfrienda.com/new/img/bt4/2-4-047.webp,,,,,,,,,,,,,,ベストタッグ4だん
 2-4-048,オノンド,2-4-048.webp,https://pokemonfrienda.com/new/img/bt4/2-4-048.webp,,,,,,,,,,,,,,ベストタッグ4だん
 2-4-049,オノノクス,2-4-049.webp,https://pokemonfrienda.com/new/img/bt4/2-4-049.webp,,,,,,,,,,,,,,ベストタッグ4だん
@@ -223,19 +223,19 @@ ID,Name,ImageFile,OriginalURL,PokeEne,HP,ATK,DEF,SP.ATK,SP.DEF,Speed,Type,Move,M
 2-4-054,ウソハチ,2-4-054.webp,https://pokemonfrienda.com/new/img/bt4/2-4-054.webp,,,,,,,,,,,,,,ベストタッグ4だん
 2-4-055,ウソッキー,2-4-055.webp,https://pokemonfrienda.com/new/img/bt4/2-4-055.webp,,,,,,,,,,,,,,ベストタッグ4だん
 2-4-056,チルット,2-4-056.webp,https://pokemonfrienda.com/new/img/bt4/2-4-056.webp,,,,,,,,,,,,,,ベストタッグ4だん
-2-4-057,チルタリス,2-4-057.webp,https://pokemonfrienda.com/new/img/bt4/2-4-057.webp,,,,,,,,,,,,,,ベストタッグ4だん
+2-4-057,チルタリス,2-4-057.webp,https://pokemonfrienda.com/new/img/bt4/2-4-057.webp,,,,,,,,"ドラゴン, ひこう",,,,,,ベストタッグ4だん
 2-4-058,モグリュー,2-4-058.webp,https://pokemonfrienda.com/new/img/bt4/2-4-058.webp,,,,,,,,,,,,,,ベストタッグ4だん
 2-4-059,ドリュウズ,2-4-059.webp,https://pokemonfrienda.com/new/img/bt4/2-4-059.webp,,,,,,,,,,,,,,ベストタッグ4だん
 2-4-060,ガラルヤドン,2-4-060.webp,https://pokemonfrienda.com/new/img/bt4/2-4-060.webp,,,,,,,,,,,,,,ベストタッグ4だん
 2-4-061,ガラルヤドラン,2-4-061.webp,https://pokemonfrienda.com/new/img/bt4/2-4-061.webp,,,,,,,,,,,,,,ベストタッグ4だん
 2-4-062,ガラルヤドキング,2-4-062.webp,https://pokemonfrienda.com/new/img/bt4/2-4-062.webp,,,,,,,,,,,,,,ベストタッグ4だん
 2-4-063,カルボウ,2-4-063.webp,https://pokemonfrienda.com/new/img/bt4/2-4-063.webp,,,,,,,,,,,,,,ベストタッグ4だん
-2-4-064,グレンアルマ,2-4-064.webp,https://pokemonfrienda.com/new/img/bt4/2-4-064.webp,,,,,,,,,,,,,,ベストタッグ4だん
+2-4-064,グレンアルマ,2-4-064.webp,https://pokemonfrienda.com/new/img/bt4/2-4-064.webp,,,,,,,,"ほのお, エスパー",,,,,,ベストタッグ4だん
 2-4-065,ソウブレイズ,2-4-065.webp,https://pokemonfrienda.com/new/img/bt4/2-4-065.webp,,,,,,,,,,,,,,ベストタッグ4だん
 2-4-066,エビワラー,2-4-066.webp,https://pokemonfrienda.com/new/img/bt4/2-4-066.webp,,,,,,,,,,,,,,ベストタッグ4だん
 2-4-067,サワムラー,2-4-067.webp,https://pokemonfrienda.com/new/img/bt4/2-4-067.webp,,,,,,,,,,,,,,ベストタッグ4だん
 2-4-068,カイロス,2-4-068.webp,https://pokemonfrienda.com/new/img/bt4/2-4-068.webp,,,,,,,,,,,,,,ベストタッグ4だん
-2-4-069,ヘラクロス,2-4-069.webp,https://pokemonfrienda.com/new/img/bt4/2-4-069.webp,,,,,,,,,,,,,,ベストタッグ4だん
+2-4-069,ヘラクロス,2-4-069.webp,https://pokemonfrienda.com/new/img/bt4/2-4-069.webp,,,,,,,,"むし, かくとう",,,,,,ベストタッグ4だん
 2-4-070,デデンネ,2-4-070.webp,https://pokemonfrienda.com/new/img/bt4/2-4-070.webp,,,,,,,,,,,,,,ベストタッグ4だん
 2-4-037★,ニンフィア,2-4-037_star.webp,https://pokemonfrienda.com/new/img/bt4/2-4-037★.webp,220,140,63,63,104,122,1,フェアリー,ドレインキッス,フェアリー,,3,色違い,ベストタッグ4だん
 2-4-041★,コリンク,2-4-041_star.webp,https://pokemonfrienda.com/new/img/bt4/2-4-041★.webp,116,87,58,32,37,32,3,でんき,でんきショック,でんき,,2,色違い,ベストタッグ4だん
@@ -258,11 +258,11 @@ ID,Name,ImageFile,OriginalURL,PokeEne,HP,ATK,DEF,SP.ATK,SP.DEF,Speed,Type,Move,M
 2-3-034,オーダイル,2-3-034.webp,https://pokemonfrienda.com/new/img/bt3/2-3-034.webp,,,,,,,,,,,,,,ベストタッグ3だん
 2-3-035,ヤヤコマ,2-3-035.webp,https://pokemonfrienda.com/new/img/bt3/2-3-035.webp,,,,,,,,,,,,,,ベストタッグ3だん
 2-3-036,ヒノヤコマ,2-3-036.webp,https://pokemonfrienda.com/new/img/bt3/2-3-036.webp,,,,,,,,,,,,,,ベストタッグ3だん
-2-3-037,ファイアロー,2-3-037.webp,https://pokemonfrienda.com/new/img/bt3/2-3-037.webp,,,,,,,,,,,,,,ベストタッグ3だん
+2-3-037,ファイアロー,2-3-037.webp,https://pokemonfrienda.com/new/img/bt3/2-3-037.webp,,,,,,,,"ほのお, ひこう",,,,,,ベストタッグ3だん
 2-3-038,ヤンチャム,2-3-038.webp,https://pokemonfrienda.com/new/img/bt3/2-3-038.webp,,,,,,,,,,,,,,ベストタッグ3だん
 2-3-039,ゴロンダ,2-3-039.webp,https://pokemonfrienda.com/new/img/bt3/2-3-039.webp,,,,,,,,,,,,,,ベストタッグ3だん
 2-3-040,オンバット,2-3-040.webp,https://pokemonfrienda.com/new/img/bt3/2-3-040.webp,,,,,,,,,,,,,,ベストタッグ3だん
-2-3-041,オンバーン,2-3-041.webp,https://pokemonfrienda.com/new/img/bt3/2-3-041.webp,,,,,,,,,,,,,,ベストタッグ3だん
+2-3-041,オンバーン,2-3-041.webp,https://pokemonfrienda.com/new/img/bt3/2-3-041.webp,,,,,,,,"ひこう, ドラゴン",,,,,,ベストタッグ3だん
 2-3-042,クレッフィ,2-3-042.webp,https://pokemonfrienda.com/new/img/bt3/2-3-042.webp,,,,,,,,,,,,,,ベストタッグ3だん
 2-3-043,ピカチュウ,2-3-043.webp,https://pokemonfrienda.com/new/img/bt3/2-3-043.webp,,,,,,,,,,,,,,ベストタッグ3だん
 2-3-044,イーブイ,2-3-044.webp,https://pokemonfrienda.com/new/img/bt3/2-3-044.webp,,,,,,,,,,,,,,ベストタッグ3だん
@@ -270,24 +270,24 @@ ID,Name,ImageFile,OriginalURL,PokeEne,HP,ATK,DEF,SP.ATK,SP.DEF,Speed,Type,Move,M
 2-3-046,グレイシア,2-3-046.webp,https://pokemonfrienda.com/new/img/bt3/2-3-046.webp,,,,,,,,,,,,,,ベストタッグ3だん
 2-3-047,コイル,2-3-047.webp,https://pokemonfrienda.com/new/img/bt3/2-3-047.webp,,,,,,,,,,,,,,ベストタッグ3だん
 2-3-048,レアコイル,2-3-048.webp,https://pokemonfrienda.com/new/img/bt3/2-3-048.webp,,,,,,,,,,,,,,ベストタッグ3だん
-2-3-049,ジバコイル,2-3-049.webp,https://pokemonfrienda.com/new/img/bt3/2-3-049.webp,,,,,,,,,,,,,,ベストタッグ3だん
+2-3-049,ジバコイル,2-3-049.webp,https://pokemonfrienda.com/new/img/bt3/2-3-049.webp,,,,,,,,"でんき, はがね",,,,,,ベストタッグ3だん
 2-3-050,トゲピー,2-3-050.webp,https://pokemonfrienda.com/new/img/bt3/2-3-050.webp,,,,,,,,,,,,,,ベストタッグ3だん
 2-3-051,トゲチック,2-3-051.webp,https://pokemonfrienda.com/new/img/bt3/2-3-051.webp,,,,,,,,,,,,,,ベストタッグ3だん
-2-3-052,トゲキッス,2-3-052.webp,https://pokemonfrienda.com/new/img/bt3/2-3-052.webp,,,,,,,,,,,,,,ベストタッグ3だん
+2-3-052,トゲキッス,2-3-052.webp,https://pokemonfrienda.com/new/img/bt3/2-3-052.webp,,,,,,,,"フェアリー, ひこう",,,,,,ベストタッグ3だん
 2-3-053,ガーディ,2-3-053.webp,https://pokemonfrienda.com/new/img/bt3/2-3-053.webp,,,,,,,,,,,,,,ベストタッグ3だん
 2-3-054,ウインディ,2-3-054.webp,https://pokemonfrienda.com/new/img/bt3/2-3-054.webp,,,,,,,,,,,,,,ベストタッグ3だん
 2-3-055,イワーク,2-3-055.webp,https://pokemonfrienda.com/new/img/bt3/2-3-055.webp,,,,,,,,,,,,,,ベストタッグ3だん
-2-3-056,ハガネール,2-3-056.webp,https://pokemonfrienda.com/new/img/bt3/2-3-056.webp,,,,,,,,,,,,,,ベストタッグ3だん
+2-3-056,ハガネール,2-3-056.webp,https://pokemonfrienda.com/new/img/bt3/2-3-056.webp,,,,,,,,"はがね, じめん",,,,,,ベストタッグ3だん
 2-3-057,ストライク,2-3-057.webp,https://pokemonfrienda.com/new/img/bt3/2-3-057.webp,,,,,,,,,,,,,,ベストタッグ3だん
-2-3-058,ハッサム,2-3-058.webp,https://pokemonfrienda.com/new/img/bt3/2-3-058.webp,,,,,,,,,,,,,,ベストタッグ3だん
-2-3-059,バサギリ,2-3-059.webp,https://pokemonfrienda.com/new/img/bt3/2-3-059.webp,,,,,,,,,,,,,,ベストタッグ3だん
+2-3-058,ハッサム,2-3-058.webp,https://pokemonfrienda.com/new/img/bt3/2-3-058.webp,,,,,,,,"むし, はがね",,,,,,ベストタッグ3だん
+2-3-059,バサギリ,2-3-059.webp,https://pokemonfrienda.com/new/img/bt3/2-3-059.webp,,,,,,,,"むし, いわ",,,,,,ベストタッグ3だん
 2-3-060,ヒンバス,2-3-060.webp,https://pokemonfrienda.com/new/img/bt3/2-3-060.webp,,,,,,,,,,,,,,ベストタッグ3だん
 2-3-061,ミロカロス,2-3-061.webp,https://pokemonfrienda.com/new/img/bt3/2-3-061.webp,,,,,,,,,,,,,,ベストタッグ3だん
 2-3-062,カゲボウズ,2-3-062.webp,https://pokemonfrienda.com/new/img/bt3/2-3-062.webp,,,,,,,,,,,,,,ベストタッグ3だん
 2-3-063,ジュペッタ,2-3-063.webp,https://pokemonfrienda.com/new/img/bt3/2-3-063.webp,,,,,,,,,,,,,,ベストタッグ3だん
 2-3-064,カジッチュ,2-3-064.webp,https://pokemonfrienda.com/new/img/bt3/2-3-064.webp,,,,,,,,,,,,,,ベストタッグ3だん
 2-3-065,アップリュー,2-3-065.webp,https://pokemonfrienda.com/new/img/bt3/2-3-065.webp,,,,,,,,,,,,,,ベストタッグ3だん
-2-3-066,タルップル,2-3-066.webp,https://pokemonfrienda.com/new/img/bt3/2-3-066.webp,,,,,,,,,,,,,,ベストタッグ3だん
+2-3-066,タルップル,2-3-066.webp,https://pokemonfrienda.com/new/img/bt3/2-3-066.webp,,,,,,,,"くさ, ドラゴン",,,,,,ベストタッグ3だん
 2-3-067,マホミル,2-3-067.webp,https://pokemonfrienda.com/new/img/bt3/2-3-067.webp,,,,,,,,,,,,,,ベストタッグ3だん
 2-3-068,マホイップ,2-3-068.webp,https://pokemonfrienda.com/new/img/bt3/2-3-068.webp,,,,,,,,,,,,,,ベストタッグ3だん
 2-3-069,ワッカネズミ,2-3-069.webp,https://pokemonfrienda.com/new/img/bt3/2-3-069.webp,,,,,,,,,,,,,,ベストタッグ3だん
@@ -338,9 +338,9 @@ ID,Name,ImageFile,OriginalURL,PokeEne,HP,ATK,DEF,SP.ATK,SP.DEF,Speed,Type,Move,M
 2-2-065,ヒドイデ,2-2-065.webp,https://pokemonfrienda.com/new/img/bt2/2-2-065.webp,,,,,,,,,,,,,,ベストタッグ2だん
 2-2-066,ドヒドイデ,2-2-066.webp,https://pokemonfrienda.com/new/img/bt2/2-2-066.webp,,,,,,,,,,,,,,ベストタッグ2だん
 2-2-067,コソクムシ,2-2-067.webp,https://pokemonfrienda.com/new/img/bt2/2-2-067.webp,,,,,,,,,,,,,,ベストタッグ2だん
-2-2-068,グソクムシャ,2-2-068.webp,https://pokemonfrienda.com/new/img/bt2/2-2-068.webp,,,,,,,,,,,,,,ベストタッグ2だん
+2-2-068,グソクムシャ,2-2-068.webp,https://pokemonfrienda.com/new/img/bt2/2-2-068.webp,,,,,,,,"むし, みず",,,,,,ベストタッグ2だん
 2-2-069,カモネギ,2-2-069.webp,https://pokemonfrienda.com/new/img/bt2/2-2-069.webp,,,,,,,,,,,,,,ベストタッグ2だん
-2-2-070,ヤミラミ,2-2-070.webp,https://pokemonfrienda.com/new/img/bt2/2-2-070.webp,,,,,,,,,,,,,,ベストタッグ2だん
+2-2-070,ヤミラミ,2-2-070.webp,https://pokemonfrienda.com/new/img/bt2/2-2-070.webp,,,,,,,,"あく, ゴースト",,,,,,ベストタッグ2だん
 2-1-026,チコリータ,2-1-026.webp,https://pokemonfrienda.com/new/img/bt1/2-1-026.webp,,,,,,,,,,,,,,ベストタッグ1だん
 2-1-027,ベイリーフ,2-1-027.webp,https://pokemonfrienda.com/new/img/bt1/2-1-027.webp,,,,,,,,,,,,,,ベストタッグ1だん
 2-1-028,メガニウム,2-1-028.webp,https://pokemonfrienda.com/new/img/bt1/2-1-028.webp,,,,,,,,,,,,,,ベストタッグ1だん
@@ -354,11 +354,11 @@ ID,Name,ImageFile,OriginalURL,PokeEne,HP,ATK,DEF,SP.ATK,SP.DEF,Speed,Type,Move,M
 2-1-036,ベラカス,2-1-036.webp,https://pokemonfrienda.com/new/img/bt1/2-1-036.webp,,,,,,,,,,,,,,ベストタッグ1だん
 2-1-037,モトトカゲ,2-1-037.webp,https://pokemonfrienda.com/new/img/bt1/2-1-037.webp,,,,,,,,,,,,,,ベストタッグ1だん
 2-1-038,キラーメ,2-1-038.webp,https://pokemonfrienda.com/new/img/bt1/2-1-038.webp,,,,,,,,,,,,,,ベストタッグ1だん
-2-1-039,キラフロル,2-1-039.webp,https://pokemonfrienda.com/new/img/bt1/2-1-039.webp,,,,,,,,,,,,,,ベストタッグ1だん
+2-1-039,キラフロル,2-1-039.webp,https://pokemonfrienda.com/new/img/bt1/2-1-039.webp,,,,,,,,"いわ, どく",,,,,,ベストタッグ1だん
 2-1-040,キリンリキ,2-1-040.webp,https://pokemonfrienda.com/new/img/bt1/2-1-040.webp,,,,,,,,,,,,,,ベストタッグ1だん
 2-1-041,リキキリン,2-1-041.webp,https://pokemonfrienda.com/new/img/bt1/2-1-041.webp,,,,,,,,,,,,,,ベストタッグ1だん
 2-1-042,チャデス,2-1-042.webp,https://pokemonfrienda.com/new/img/bt1/2-1-042.webp,,,,,,,,,,,,,,ベストタッグ1だん
-2-1-043,ヤバソチャ,2-1-043.webp,https://pokemonfrienda.com/new/img/bt1/2-1-043.webp,,,,,,,,,,,,,,ベストタッグ1だん
+2-1-043,ヤバソチャ,2-1-043.webp,https://pokemonfrienda.com/new/img/bt1/2-1-043.webp,,,,,,,,"くさ, ゴースト",,,,,,ベストタッグ1だん
 2-1-044,ピカチュウ,2-1-044.webp,https://pokemonfrienda.com/new/img/bt1/2-1-044.webp,,,,,,,,,,,,,,ベストタッグ1だん
 2-1-045,イーブイ,2-1-045.webp,https://pokemonfrienda.com/new/img/bt1/2-1-045.webp,,,,,,,,,,,,,,ベストタッグ1だん
 2-1-046,エーフィ,2-1-046.webp,https://pokemonfrienda.com/new/img/bt1/2-1-046.webp,,,,,,,,,,,,,,ベストタッグ1だん
@@ -371,7 +371,7 @@ ID,Name,ImageFile,OriginalURL,PokeEne,HP,ATK,DEF,SP.ATK,SP.DEF,Speed,Type,Move,M
 2-1-053,マンムー,2-1-053.webp,https://pokemonfrienda.com/new/img/bt1/2-1-053.webp,,,,,,,,,,,,,,ベストタッグ1だん
 2-1-054,ラルトス,2-1-054.webp,https://pokemonfrienda.com/new/img/bt1/2-1-054.webp,,,,,,,,,,,,,,ベストタッグ1だん
 2-1-055,キルリア,2-1-055.webp,https://pokemonfrienda.com/new/img/bt1/2-1-055.webp,,,,,,,,,,,,,,ベストタッグ1だん
-2-1-056,エルレイド,2-1-056.webp,https://pokemonfrienda.com/new/img/bt1/2-1-056.webp,,,,,,,,,,,,,,ベストタッグ1だん
+2-1-056,エルレイド,2-1-056.webp,https://pokemonfrienda.com/new/img/bt1/2-1-056.webp,,,,,,,,"エスパー, かくとう",,,,,,ベストタッグ1だん
 2-1-057,アゴジムシ,2-1-057.webp,https://pokemonfrienda.com/new/img/bt1/2-1-057.webp,,,,,,,,,,,,,,ベストタッグ1だん
 2-1-058,デンヂムシ,2-1-058.webp,https://pokemonfrienda.com/new/img/bt1/2-1-058.webp,,,,,,,,,,,,,,ベストタッグ1だん
 2-1-059,クワガノン,2-1-059.webp,https://pokemonfrienda.com/new/img/bt1/2-1-059.webp,,,,,,,,,,,,,,ベストタッグ1だん
@@ -414,7 +414,7 @@ ID,Name,ImageFile,OriginalURL,PokeEne,HP,ATK,DEF,SP.ATK,SP.DEF,Speed,Type,Move,M
 1-5-051,ゴチルゼル,1-5-051.webp,https://pokemonfrienda.com/new/img/5/1-5-051.webp,,,,,,,,,,,,,,5だん
 1-5-052,ココガラ,1-5-052.webp,https://pokemonfrienda.com/new/img/5/1-5-052.webp,,,,,,,,,,,,,,5だん
 1-5-053,アオガラス,1-5-053.webp,https://pokemonfrienda.com/new/img/5/1-5-053.webp,,,,,,,,,,,,,,5だん
-1-5-054,アーマーガア,1-5-054.webp,https://pokemonfrienda.com/new/img/5/1-5-054.webp,,,,,,,,,,,,,,5だん
+1-5-054,アーマーガア,1-5-054.webp,https://pokemonfrienda.com/new/img/5/1-5-054.webp,,,,,,,,"ひこう, はがね",,,,,,5だん
 1-5-055,ドガース,1-5-055.webp,https://pokemonfrienda.com/new/img/5/1-5-055.webp,,,,,,,,,,,,,,5だん
 1-5-056,マタドガス,1-5-056.webp,https://pokemonfrienda.com/new/img/5/1-5-056.webp,,,,,,,,,,,,,,5だん
 1-5-057,タマタマ,1-5-057.webp,https://pokemonfrienda.com/new/img/5/1-5-057.webp,,,,,,,,,,,,,,5だん
@@ -428,12 +428,12 @@ ID,Name,ImageFile,OriginalURL,PokeEne,HP,ATK,DEF,SP.ATK,SP.DEF,Speed,Type,Move,M
 1-5-065,ヤクデ,1-5-065.webp,https://pokemonfrienda.com/new/img/5/1-5-065.webp,,,,,,,,,,,,,,5だん
 1-5-066,マルヤクデ,1-5-066.webp,https://pokemonfrienda.com/new/img/5/1-5-066.webp,,,,,,,,,,,,,,5だん
 1-5-067,ミルタンク,1-5-067.webp,https://pokemonfrienda.com/new/img/5/1-5-067.webp,,,,,,,,,,,,,,5だん
-1-5-068,ルチャブル,1-5-068.webp,https://pokemonfrienda.com/new/img/5/1-5-068.webp,,,,,,,,,,,,,,5だん
+1-5-068,ルチャブル,1-5-068.webp,https://pokemonfrienda.com/new/img/5/1-5-068.webp,,,,,,,,"かくとう, ひこう",,,,,,5だん
 1-5-069,ネッコアラ,1-5-069.webp,https://pokemonfrienda.com/new/img/5/1-5-069.webp,,,,,,,,,,,,,,5だん
 1-5-070,ジジーロン,1-5-070.webp,https://pokemonfrienda.com/new/img/5/1-5-070.webp,,,,,,,,,,,,,,5だん
 1-4-026,フシギダネ,1-4-026.webp,https://pokemonfrienda.com/new/img/4/1-4-026.webp,,,,,,,,,,,,,,4だん
 1-4-027,フシギソウ,1-4-027.webp,https://pokemonfrienda.com/new/img/4/1-4-027.webp,,,,,,,,,,,,,,4だん
-1-4-028,フシギバナ,1-4-028.webp,https://pokemonfrienda.com/new/img/4/1-4-028.webp,,,,,,,,,,,,,,4だん
+1-4-028,フシギバナ,1-4-028.webp,https://pokemonfrienda.com/new/img/4/1-4-028.webp,,,,,,,,"くさ, どく",,,,,,4だん
 1-4-029,ヒトカゲ,1-4-029.webp,https://pokemonfrienda.com/new/img/4/1-4-029.webp,,,,,,,,,,,,,,4だん
 1-4-030,リザード,1-4-030.webp,https://pokemonfrienda.com/new/img/4/1-4-030.webp,,,,,,,,,,,,,,4だん
 1-4-031,リザードン,1-4-031.webp,https://pokemonfrienda.com/new/img/4/1-4-031.webp,,,,,,,,,,,,,,4だん
@@ -446,7 +446,7 @@ ID,Name,ImageFile,OriginalURL,PokeEne,HP,ATK,DEF,SP.ATK,SP.DEF,Speed,Type,Move,M
 1-4-038,バウッツェル,1-4-038.webp,https://pokemonfrienda.com/new/img/4/1-4-038.webp,,,,,,,,,,,,,,4だん
 1-4-039,カヌチャン,1-4-039.webp,https://pokemonfrienda.com/new/img/4/1-4-039.webp,,,,,,,,,,,,,,4だん
 1-4-040,ナカヌチャン,1-4-040.webp,https://pokemonfrienda.com/new/img/4/1-4-040.webp,,,,,,,,,,,,,,4だん
-1-4-041,デカヌチャン,1-4-041.webp,https://pokemonfrienda.com/new/img/4/1-4-041.webp,,,,,,,,,,,,,,4だん
+1-4-041,デカヌチャン,1-4-041.webp,https://pokemonfrienda.com/new/img/4/1-4-041.webp,,,,,,,,"フェアリー, はがね",,,,,,4だん
 1-4-042,ドッコラー,1-4-042.webp,https://pokemonfrienda.com/new/img/4/1-4-042.webp,,,,,,,,,,,,,,4だん
 1-4-043,ドテッコツ,1-4-043.webp,https://pokemonfrienda.com/new/img/4/1-4-043.webp,,,,,,,,,,,,,,4だん
 1-4-044,ローブシン,1-4-044.webp,https://pokemonfrienda.com/new/img/4/1-4-044.webp,,,,,,,,,,,,,,4だん
@@ -478,17 +478,17 @@ ID,Name,ImageFile,OriginalURL,PokeEne,HP,ATK,DEF,SP.ATK,SP.DEF,Speed,Type,Move,M
 1-4-070,ダダリン,1-4-070.webp,https://pokemonfrienda.com/new/img/4/1-4-070.webp,,,,,,,,,,,,,,4だん
 1-3-026,ナエトル,1-3-026.webp,https://pokemonfrienda.com/new/img/3/1-3-026.webp,,,,,,,,,,,,,,3だん
 1-3-027,ハヤシガメ,1-3-027.webp,https://pokemonfrienda.com/new/img/3/1-3-027.webp,,,,,,,,,,,,,,3だん
-1-3-028,ドダイトス,1-3-028.webp,https://pokemonfrienda.com/new/img/3/1-3-028.webp,,,,,,,,,,,,,,3だん
+1-3-028,ドダイトス,1-3-028.webp,https://pokemonfrienda.com/new/img/3/1-3-028.webp,,,,,,,,"くさ, じめん",,,,,,3だん
 1-3-029,ヒコザル,1-3-029.webp,https://pokemonfrienda.com/new/img/3/1-3-029.webp,,,,,,,,,,,,,,3だん
 1-3-030,モウカザル,1-3-030.webp,https://pokemonfrienda.com/new/img/3/1-3-030.webp,,,,,,,,,,,,,,3だん
 1-3-031,ゴウカザル,1-3-031.webp,https://pokemonfrienda.com/new/img/3/1-3-031.webp,,,,,,,,,,,,,,3だん
 1-3-032,ポッチャマ,1-3-032.webp,https://pokemonfrienda.com/new/img/3/1-3-032.webp,,,,,,,,,,,,,,3だん
 1-3-033,ポッタイシ,1-3-033.webp,https://pokemonfrienda.com/new/img/3/1-3-033.webp,,,,,,,,,,,,,,3だん
-1-3-034,エンペルト,1-3-034.webp,https://pokemonfrienda.com/new/img/3/1-3-034.webp,,,,,,,,,,,,,,3だん
+1-3-034,エンペルト,1-3-034.webp,https://pokemonfrienda.com/new/img/3/1-3-034.webp,,,,,,,,"みず, はがね",,,,,,3だん
 1-3-035,グルトン,1-3-035.webp,https://pokemonfrienda.com/new/img/3/1-3-035.webp,,,,,,,,,,,,,,3だん
 1-3-036,パフュートン,1-3-036.webp,https://pokemonfrienda.com/new/img/3/1-3-036.webp,,,,,,,,,,,,,,3だん
 1-3-037,マメバッタ,1-3-037.webp,https://pokemonfrienda.com/new/img/3/1-3-037.webp,,,,,,,,,,,,,,3だん
-1-3-038,エクスレッグ,1-3-038.webp,https://pokemonfrienda.com/new/img/3/1-3-038.webp,,,,,,,,,,,,,,3だん
+1-3-038,エクスレッグ,1-3-038.webp,https://pokemonfrienda.com/new/img/3/1-3-038.webp,,,,,,,,"むし, あく",,,,,,3だん
 1-3-039,シルシュルー,1-3-039.webp,https://pokemonfrienda.com/new/img/3/1-3-039.webp,,,,,,,,,,,,,,3だん
 1-3-040,タギングル,1-3-040.webp,https://pokemonfrienda.com/new/img/3/1-3-040.webp,,,,,,,,,,,,,,3だん
 1-3-041,ヒラヒナ,1-3-041.webp,https://pokemonfrienda.com/new/img/3/1-3-041.webp,,,,,,,,,,,,,,3だん
@@ -505,11 +505,11 @@ ID,Name,ImageFile,OriginalURL,PokeEne,HP,ATK,DEF,SP.ATK,SP.DEF,Speed,Type,Move,M
 1-3-052,プリン,1-3-052.webp,https://pokemonfrienda.com/new/img/3/1-3-052.webp,,,,,,,,,,,,,,3だん
 1-3-053,プクリン,1-3-053.webp,https://pokemonfrienda.com/new/img/3/1-3-053.webp,,,,,,,,,,,,,,3だん
 1-3-054,リオル,1-3-054.webp,https://pokemonfrienda.com/new/img/3/1-3-054.webp,,,,,,,,,,,,,,3だん
-1-3-055,ルカリオ,1-3-055.webp,https://pokemonfrienda.com/new/img/3/1-3-055.webp,,,,,,,,,,,,,,3だん
+1-3-055,ルカリオ,1-3-055.webp,https://pokemonfrienda.com/new/img/3/1-3-055.webp,,,,,,,,"かくとう, はがね",,,,,,3だん
 1-3-056,アローラコラッタ,1-3-056.webp,https://pokemonfrienda.com/new/img/3/1-3-056.webp,,,,,,,,,,,,,,3だん
 1-3-057,アローララッタ,1-3-057.webp,https://pokemonfrienda.com/new/img/3/1-3-057.webp,,,,,,,,,,,,,,3だん
 1-3-058,デルビル,1-3-058.webp,https://pokemonfrienda.com/new/img/3/1-3-058.webp,,,,,,,,,,,,,,3だん
-1-3-059,ヘルガー,1-3-059.webp,https://pokemonfrienda.com/new/img/3/1-3-059.webp,,,,,,,,,,,,,,3だん
+1-3-059,ヘルガー,1-3-059.webp,https://pokemonfrienda.com/new/img/3/1-3-059.webp,,,,,,,,"あく, ほのお",,,,,,3だん
 1-3-060,ゴクリン,1-3-060.webp,https://pokemonfrienda.com/new/img/3/1-3-060.webp,,,,,,,,,,,,,,3だん
 1-3-061,マルノーム,1-3-061.webp,https://pokemonfrienda.com/new/img/3/1-3-061.webp,,,,,,,,,,,,,,3だん
 1-3-062,サボネア,1-3-062.webp,https://pokemonfrienda.com/new/img/3/1-3-062.webp,,,,,,,,,,,,,,3だん
@@ -530,13 +530,13 @@ ID,Name,ImageFile,OriginalURL,PokeEne,HP,ATK,DEF,SP.ATK,SP.DEF,Speed,Type,Move,M
 1-2-025,ハカドッグ,1-2-025_kira.webp,https://pokemonfrienda.com/new/img/2/1-2-025_kira.webp,176,102,81,81,43,78,3,ゴースト,ゴーストダイブ,ゴースト,,4,,2だん
 1-2-026,ハリマロン,1-2-026.webp,https://pokemonfrienda.com/new/img/2/1-2-026.webp,,,,,,,,,,,,,,2だん
 1-2-027,ハリボーグ,1-2-027.webp,https://pokemonfrienda.com/new/img/2/1-2-027.webp,,,,,,,,,,,,,,2だん
-1-2-028,ブリガロン,1-2-028.webp,https://pokemonfrienda.com/new/img/2/1-2-028.webp,,,,,,,,,,,,,,2だん
+1-2-028,ブリガロン,1-2-028.webp,https://pokemonfrienda.com/new/img/2/1-2-028.webp,,,,,,,,"くさ, かくとう",,,,,,2だん
 1-2-029,フォッコ,1-2-029.webp,https://pokemonfrienda.com/new/img/2/1-2-029.webp,,,,,,,,,,,,,,2だん
 1-2-030,テールナー,1-2-030.webp,https://pokemonfrienda.com/new/img/2/1-2-030.webp,,,,,,,,,,,,,,2だん
-1-2-031,マフォクシー,1-2-031.webp,https://pokemonfrienda.com/new/img/2/1-2-031.webp,,,,,,,,,,,,,,2だん
+1-2-031,マフォクシー,1-2-031.webp,https://pokemonfrienda.com/new/img/2/1-2-031.webp,,,,,,,,"ほのお, エスパー",,,,,,2だん
 1-2-032,ケロマツ,1-2-032.webp,https://pokemonfrienda.com/new/img/2/1-2-032.webp,,,,,,,,,,,,,,2だん
 1-2-033,ゲコガシラ,1-2-033.webp,https://pokemonfrienda.com/new/img/2/1-2-033.webp,,,,,,,,,,,,,,2だん
-1-2-034,ゲッコウガ,1-2-034.webp,https://pokemonfrienda.com/new/img/2/1-2-034.webp,,,,,,,,,,,,,,2だん
+1-2-034,ゲッコウガ,1-2-034.webp,https://pokemonfrienda.com/new/img/2/1-2-034.webp,,,,,,,,"みず, あく",,,,,,2だん
 1-2-035,パモ,1-2-035.webp,https://pokemonfrienda.com/new/img/2/1-2-035.webp,,,,,,,,,,,,,,2だん
 1-2-036,パモット,1-2-036.webp,https://pokemonfrienda.com/new/img/2/1-2-036.webp,,,,,,,,,,,,,,2だん
 1-2-037,パーモット,1-2-037.webp,https://pokemonfrienda.com/new/img/2/1-2-037.webp,,,,,,,,,,,,,,2だん
@@ -544,7 +544,7 @@ ID,Name,ImageFile,OriginalURL,PokeEne,HP,ATK,DEF,SP.ATK,SP.DEF,Speed,Type,Move,M
 1-2-039,ジオヅム,1-2-039.webp,https://pokemonfrienda.com/new/img/2/1-2-039.webp,,,,,,,,,,,,,,2だん
 1-2-040,キョジオーン,1-2-040.webp,https://pokemonfrienda.com/new/img/2/1-2-040.webp,,,,,,,,,,,,,,2だん
 1-2-041,ブロロン,1-2-041.webp,https://pokemonfrienda.com/new/img/2/1-2-041.webp,,,,,,,,,,,,,,2だん
-1-2-042,ブロロローム,1-2-042.webp,https://pokemonfrienda.com/new/img/2/1-2-042.webp,,,,,,,,,,,,,,2だん
+1-2-042,ブロロローム,1-2-042.webp,https://pokemonfrienda.com/new/img/2/1-2-042.webp,,,,,,,,"はがね, どく",,,,,,2だん
 1-2-043,ミミズズ,1-2-043.webp,https://pokemonfrienda.com/new/img/2/1-2-043.webp,,,,,,,,,,,,,,2だん
 1-2-044,ボチ,1-2-044.webp,https://pokemonfrienda.com/new/img/2/1-2-044.webp,,,,,,,,,,,,,,2だん
 1-2-045,ハカドッグ,1-2-045.webp,https://pokemonfrienda.com/new/img/2/1-2-045.webp,,,,,,,,,,,,,,2だん
@@ -554,7 +554,7 @@ ID,Name,ImageFile,OriginalURL,PokeEne,HP,ATK,DEF,SP.ATK,SP.DEF,Speed,Type,Move,M
 1-2-049,ドデカバシ,1-2-049.webp,https://pokemonfrienda.com/new/img/2/1-2-049.webp,,,,,,,,,,,,,,2だん
 1-2-050,ココドラ,1-2-050.webp,https://pokemonfrienda.com/new/img/2/1-2-050.webp,,,,,,,,,,,,,,2だん
 1-2-051,コドラ,1-2-051.webp,https://pokemonfrienda.com/new/img/2/1-2-051.webp,,,,,,,,,,,,,,2だん
-1-2-052,ボスゴドラ,1-2-052.webp,https://pokemonfrienda.com/new/img/2/1-2-052.webp,,,,,,,,,,,,,,2だん
+1-2-052,ボスゴドラ,1-2-052.webp,https://pokemonfrienda.com/new/img/2/1-2-052.webp,,,,,,,,"はがね, いわ",,,,,,2だん
 1-2-053,チョンチー,1-2-053.webp,https://pokemonfrienda.com/new/img/2/1-2-053.webp,,,,,,,,,,,,,,2だん
 1-2-054,ランターン,1-2-054.webp,https://pokemonfrienda.com/new/img/2/1-2-054.webp,,,,,,,,,,,,,,2だん
 1-2-055,カラカラ,1-2-055.webp,https://pokemonfrienda.com/new/img/2/1-2-055.webp,,,,,,,,,,,,,,2だん
@@ -576,10 +576,10 @@ ID,Name,ImageFile,OriginalURL,PokeEne,HP,ATK,DEF,SP.ATK,SP.DEF,Speed,Type,Move,M
 1-1-001,コライドン,1-1-001_kira.webp,https://pokemonfrienda.com/new/img/1/1-1-001_kira.webp,244,130,113,97,73,85,3,ドラゴン,アクセルブレイク,かくとう,,5,,1だん
 1-1-002,ミライドン,1-1-002_kira.webp,https://pokemonfrienda.com/new/img/1/1-1-002_kira.webp,244,130,73,85,113,97,3,でんき,イナズマドライブ,でんき,テラスタル,5,,1だん
 1-1-003,オーガポン,1-1-003_kira.webp,https://pokemonfrienda.com/new/img/1/1-1-003_kira.webp,220,121,108,77,56,87,3,くさ,ツタこんぼう,くさ,,5,,1だん
-1-1-004,マスカーニャ,1-1-004_kira.webp,https://pokemonfrienda.com/new/img/1/1-1-004_kira.webp,212,118,99,65,74,65,3,くさ,トリックフラワー,くさ,テラスタル,5,,1だん
+1-1-004,マスカーニャ,1-1-004_kira.webp,https://pokemonfrienda.com/new/img/1/1-1-004_kira.webp,212,118,99,65,74,65,3,"くさ, あく",トリックフラワー,くさ,テラスタル,5,,1だん
 1-1-005,ラウドボーン,1-1-005_kira.webp,https://pokemonfrienda.com/new/img/1/1-1-005_kira.webp,212,142,69,91,99,69,1,"ほのお, ゴースト","フレアソング, テラバースト","ほのお, ほのお",テラスタル,5,,1だん
-1-1-006,ウェーニバル,1-1-006_kira.webp,https://pokemonfrienda.com/new/img/1/1-1-006_kira.webp,212,126,108,73,78,69,3,みず,アクアステップ,みず,テラスタル,5,,1だん
-1-1-007,ルカリオ,1-1-007_kira.webp,https://pokemonfrienda.com/new/img/1/1-1-007_kira.webp,212,113,99,65,103,65,3,かくとう,きあいだま,かくとう,メガシンカ,5,,1だん
+1-1-006,ウェーニバル,1-1-006_kira.webp,https://pokemonfrienda.com/new/img/1/1-1-006_kira.webp,212,126,108,73,78,69,3,"みず, かくとう",アクアステップ,みず,テラスタル,5,,1だん
+1-1-007,ルカリオ,1-1-007_kira.webp,https://pokemonfrienda.com/new/img/1/1-1-007_kira.webp,212,113,99,65,103,65,3,"かくとう, はがね",きあいだま,かくとう,メガシンカ,5,,1だん
 1-1-008,セレビィ,1-1-008_kira.webp,https://pokemonfrienda.com/new/img/1/1-1-008_kira.webp,224,130,85,85,85,85,3,くさ,リーフストーム,くさ,Zわざ,5,,1だん
 1-1-009,ウインディ,1-1-009_kira.webp,https://pokemonfrienda.com/new/img/1/1-1-009_kira.webp,220,130,99,73,91,73,3,ほのお,だいもんじ,ほのお,Zわざ,5,,1だん
 1-1-010,ミロカロス,1-1-010_kira.webp,https://pokemonfrienda.com/new/img/1/1-1-010_kira.webp,216,134,56,72,91,112,3,みず,スーパーアクアトルネード,みず,Zわざ,5,,1だん
@@ -590,7 +590,7 @@ ID,Name,ImageFile,OriginalURL,PokeEne,HP,ATK,DEF,SP.ATK,SP.DEF,Speed,Type,Move,M
 1-1-015,リザードン,1-1-015_kira.webp,https://pokemonfrienda.com/new/img/1/1-1-015_kira.webp,180,102,65,61,83,66,3,ほのお,かえんほうしゃ,ほのお,,4,,1だん
 1-1-016,カメックス,1-1-016_kira.webp,https://pokemonfrienda.com/new/img/1/1-1-016_kira.webp,180,102,64,77,66,80,2,みず,ハイドロポンプ,みず,,4,,1だん
 1-1-017,ヤドキング,1-1-017_kira.webp,https://pokemonfrienda.com/new/img/1/1-1-017_kira.webp,168,114,59,62,77,84,1,みず,なみのり,みず,テラスタル,4,,1だん
-1-1-018,ヘルガー,1-1-018_kira.webp,https://pokemonfrienda.com/new/img/1/1-1-018_kira.webp,172,100,69,41,84,62,3,あく,かえんほうしゃ,ほのお,テラスタル,4,,1だん
+1-1-018,ヘルガー,1-1-018_kira.webp,https://pokemonfrienda.com/new/img/1/1-1-018_kira.webp,172,100,69,41,84,62,3,"あく, ほのお",かえんほうしゃ,ほのお,テラスタル,4,,1だん
 1-1-019,オリーヴァ,1-1-019_kira.webp,https://pokemonfrienda.com/new/img/1/1-1-019_kira.webp,176,102,54,69,95,83,1,くさ,テラバースト,くさ,テラスタル,4,,1だん
 1-1-020,ピカチュウ,1-1-020_kira.webp,https://pokemonfrienda.com/new/img/1/1-1-020_kira.webp,156,91,57,43,53,53,3,でんき,10まんボルト,でんき,Zわざ,4,,1だん
 1-1-021,ドンファン,1-1-021_kira.webp,https://pokemonfrienda.com/new/img/1/1-1-021_kira.webp,172,110,91,91,48,48,1,じめん,あなをほる,じめん,,4,,1だん
@@ -600,16 +600,16 @@ ID,Name,ImageFile,OriginalURL,PokeEne,HP,ATK,DEF,SP.ATK,SP.DEF,Speed,Type,Move,M
 1-1-025,ドオー,1-1-025_kira.webp,https://pokemonfrienda.com/new/img/1/1-1-025_kira.webp,160,146,62,50,39,81,1,"どく, じめん",あなをほる,じめん,,4,,1だん
 1-1-026,ニャオハ,1-1-026.webp,https://pokemonfrienda.com/new/img/1/1-1-026.webp,,,,,,,,,,,,,,1だん
 1-1-027,ニャローテ,1-1-027.webp,https://pokemonfrienda.com/new/img/1/1-1-027.webp,,,,,,,,,,,,,,1だん
-1-1-028,マスカーニャ,1-1-028.webp,https://pokemonfrienda.com/new/img/1/1-1-028.webp,,,,,,,,,,,,,,1だん
+1-1-028,マスカーニャ,1-1-028.webp,https://pokemonfrienda.com/new/img/1/1-1-028.webp,,,,,,,,"くさ, あく",,,,,,1だん
 1-1-029,ホゲータ,1-1-029.webp,https://pokemonfrienda.com/new/img/1/1-1-029.webp,,,,,,,,,,,,,,1だん
 1-1-030,アチゲータ,1-1-030.webp,https://pokemonfrienda.com/new/img/1/1-1-030.webp,,,,,,,,,,,,,,1だん
-1-1-031,ラウドボーン,1-1-031.webp,https://pokemonfrienda.com/new/img/1/1-1-031.webp,,,,,,,,,,,,,,1だん
+1-1-031,ラウドボーン,1-1-031.webp,https://pokemonfrienda.com/new/img/1/1-1-031.webp,,,,,,,,"ほのお, ゴースト",,,,,,1だん
 1-1-032,クワッス,1-1-032.webp,https://pokemonfrienda.com/new/img/1/1-1-032.webp,,,,,,,,,,,,,,1だん
 1-1-033,ウェルカモ,1-1-033.webp,https://pokemonfrienda.com/new/img/1/1-1-033.webp,,,,,,,,,,,,,,1だん
-1-1-034,ウェーニバル,1-1-034.webp,https://pokemonfrienda.com/new/img/1/1-1-034.webp,,,,,,,,,,,,,,1だん
+1-1-034,ウェーニバル,1-1-034.webp,https://pokemonfrienda.com/new/img/1/1-1-034.webp,,,,,,,,"みず, かくとう",,,,,,1だん
 1-1-035,フシギダネ,1-1-035.webp,https://pokemonfrienda.com/new/img/1/1-1-035.webp,,,,,,,,,,,,,,1だん
 1-1-036,フシギソウ,1-1-036.webp,https://pokemonfrienda.com/new/img/1/1-1-036.webp,,,,,,,,,,,,,,1だん
-1-1-037,フシギバナ,1-1-037.webp,https://pokemonfrienda.com/new/img/1/1-1-037.webp,,,,,,,,,,,,,,1だん
+1-1-037,フシギバナ,1-1-037.webp,https://pokemonfrienda.com/new/img/1/1-1-037.webp,,,,,,,,"くさ, どく",,,,,,1だん
 1-1-038,ヒトカゲ,1-1-038.webp,https://pokemonfrienda.com/new/img/1/1-1-038.webp,,,,,,,,,,,,,,1だん
 1-1-039,リザード,1-1-039.webp,https://pokemonfrienda.com/new/img/1/1-1-039.webp,,,,,,,,,,,,,,1だん
 1-1-040,リザードン,1-1-040.webp,https://pokemonfrienda.com/new/img/1/1-1-040.webp,,,,,,,,,,,,,,1だん
@@ -624,7 +624,7 @@ ID,Name,ImageFile,OriginalURL,PokeEne,HP,ATK,DEF,SP.ATK,SP.DEF,Speed,Type,Move,M
 1-1-049,アルクジラ,1-1-049.webp,https://pokemonfrienda.com/new/img/1/1-1-049.webp,,,,,,,,,,,,,,1だん
 1-1-050,ハルクジラ,1-1-050.webp,https://pokemonfrienda.com/new/img/1/1-1-050.webp,,,,,,,,,,,,,,1だん
 1-1-051,パルデアウパー,1-1-051.webp,https://pokemonfrienda.com/new/img/1/1-1-051.webp,,,,,,,,,,,,,,1だん
-1-1-052,ドオー,1-1-052.webp,https://pokemonfrienda.com/new/img/1/1-1-052.webp,,,,,,,,,,,,,,1だん
+1-1-052,ドオー,1-1-052.webp,https://pokemonfrienda.com/new/img/1/1-1-052.webp,,,,,,,,"どく, じめん",,,,,,1だん
 1-1-053,ウミディグダ,1-1-053.webp,https://pokemonfrienda.com/new/img/1/1-1-053.webp,,,,,,,,,,,,,,1だん
 1-1-054,ウミトリオ,1-1-054.webp,https://pokemonfrienda.com/new/img/1/1-1-054.webp,,,,,,,,,,,,,,1だん
 1-1-055,ピカチュウ,1-1-055.webp,https://pokemonfrienda.com/new/img/1/1-1-055.webp,,,,,,,,,,,,,,1だん
@@ -633,7 +633,7 @@ ID,Name,ImageFile,OriginalURL,PokeEne,HP,ATK,DEF,SP.ATK,SP.DEF,Speed,Type,Move,M
 1-1-058,ヒトデマン,1-1-058.webp,https://pokemonfrienda.com/new/img/1/1-1-058.webp,,,,,,,,,,,,,,1だん
 1-1-059,スターミー,1-1-059.webp,https://pokemonfrienda.com/new/img/1/1-1-059.webp,,,,,,,,,,,,,,1だん
 1-1-060,ルージュラ,1-1-060.webp,https://pokemonfrienda.com/new/img/1/1-1-060.webp,,,,,,,,,,,,,,1だん
-1-1-061,ラプラス,1-1-061.webp,https://pokemonfrienda.com/new/img/1/1-1-061.webp,,,,,,,,,,,,,,1だん
+1-1-061,ラプラス,1-1-061.webp,https://pokemonfrienda.com/new/img/1/1-1-061.webp,,,,,,,,"みず, こおり",,,,,,1だん
 1-1-062,ゴマゾウ,1-1-062.webp,https://pokemonfrienda.com/new/img/1/1-1-062.webp,,,,,,,,,,,,,,1だん
 1-1-063,ドンファン,1-1-063.webp,https://pokemonfrienda.com/new/img/1/1-1-063.webp,,,,,,,,,,,,,,1だん
 1-1-064,モンメン,1-1-064.webp,https://pokemonfrienda.com/new/img/1/1-1-064.webp,,,,,,,,,,,,,,1だん
@@ -644,7 +644,7 @@ ID,Name,ImageFile,OriginalURL,PokeEne,HP,ATK,DEF,SP.ATK,SP.DEF,Speed,Type,Move,M
 1-1-069,ウッウ,1-1-069.webp,https://pokemonfrienda.com/new/img/1/1-1-069.webp,,,,,,,,,,,,,,1だん
 1-1-070,イーブイ,1-1-070.webp,https://pokemonfrienda.com/new/img/1/1-1-070.webp,,,,,,,,,,,,,,1だん
 2-3-W01,ミュウ,2-3-W01.webp,https://pokemonfrienda.com/new/wonder/img/2-3-W01.webp,,,,,,,,,,,,,ワンダー,ベストタッグ3だん
-2-3-W02,ラプラス,2-3-W02.webp,https://pokemonfrienda.com/new/wonder/img/2-3-W02.webp,,,,,,,,,,,,,ワンダー,ベストタッグ3だん
+2-3-W02,ラプラス,2-3-W02.webp,https://pokemonfrienda.com/new/wonder/img/2-3-W02.webp,,,,,,,,"みず, こおり",,,,,ワンダー,ベストタッグ3だん
 2-3-W03,アローラキュウコン,2-3-W03.webp,https://pokemonfrienda.com/new/wonder/img/2-3-W03.webp,,,,,,,,,,,,,ワンダー,ベストタッグ3だん
 2-2-W01,ピカチュウ,2-2-W01.webp,https://pokemonfrienda.com/new/wonder/img/2-2-W01.webp,,,,,,,,,,,,,ワンダー,ベストタッグ2だん
 2-2-W02,ジュペッタ,2-2-W02.webp,https://pokemonfrienda.com/new/wonder/img/2-2-W02.webp,,,,,,,,,,,,,ワンダー,ベストタッグ2だん
@@ -652,7 +652,7 @@ ID,Name,ImageFile,OriginalURL,PokeEne,HP,ATK,DEF,SP.ATK,SP.DEF,Speed,Type,Move,M
 2-1-W01,フリーザー,2-1-W01.webp,https://pokemonfrienda.com/new/wonder/img/2-1-W01.webp,,,,,,,,,,,,,ワンダー,ベストタッグ1だん
 2-1-W02,サンダー,2-1-W02.webp,https://pokemonfrienda.com/new/wonder/img/2-1-W02.webp,,,,,,,,,,,,,ワンダー,ベストタッグ1だん
 2-1-W03,ファイヤー,2-1-W03.webp,https://pokemonfrienda.com/new/wonder/img/2-1-W03.webp,,,,,,,,,,,,,ワンダー,ベストタッグ1だん
-1-5-W01,フシギバナ,1-5-W01.webp,https://pokemonfrienda.com/new/wonder/img/1-5-W01.webp,,,,,,,,,,,,,ワンダー,5だん
+1-5-W01,フシギバナ,1-5-W01.webp,https://pokemonfrienda.com/new/wonder/img/1-5-W01.webp,,,,,,,,"くさ, どく",,,,,ワンダー,5だん
 1-5-W02,リザードン,1-5-W02.webp,https://pokemonfrienda.com/new/wonder/img/1-5-W02.webp,,,,,,,,,,,,,ワンダー,5だん
 1-5-W03,リザードン,1-5-W03.webp,https://pokemonfrienda.com/new/wonder/img/1-5-W03.webp,,,,,,,,,,,,,ワンダー,5だん
 1-5-W04,カメックス,1-5-W04.webp,https://pokemonfrienda.com/new/wonder/img/1-5-W04.webp,,,,,,,,,,,,,ワンダー,5だん
@@ -660,8 +660,8 @@ ID,Name,ImageFile,OriginalURL,PokeEne,HP,ATK,DEF,SP.ATK,SP.DEF,Speed,Type,Move,M
 1-4-W02,サンダース,1-4-W02.webp,https://pokemonfrienda.com/new/wonder/img/1-4-W02.webp,,,,,,,,,,,,,ワンダー,4だん
 1-4-W03,ブースター,1-4-W03.webp,https://pokemonfrienda.com/new/wonder/img/1-4-W03.webp,,,,,,,,,,,,,ワンダー,4だん
 1-4-W04,ニンフィア,1-4-W04.webp,https://pokemonfrienda.com/new/wonder/img/1-4-W04.webp,,,,,,,,,,,,,ワンダー,4だん
-1-3-W01,レックウザ,1-3-W01.webp,https://pokemonfrienda.com/new/wonder/img/1-3-W01.webp,,,,,,,,,,,,,ワンダー,3だん
-1-3-W02,レックウザ,1-3-W02.webp,https://pokemonfrienda.com/new/wonder/img/1-3-W02.webp,,,,,,,,,,,,,ワンダー,3だん
+1-3-W01,レックウザ,1-3-W01.webp,https://pokemonfrienda.com/new/wonder/img/1-3-W01.webp,,,,,,,,"ドラゴン, ひこう",,,,,ワンダー,3だん
+1-3-W02,レックウザ,1-3-W02.webp,https://pokemonfrienda.com/new/wonder/img/1-3-W02.webp,,,,,,,,"ドラゴン, ひこう",,,,,ワンダー,3だん
 1-2-W01,ゲンガー,1-2-W01.webp,https://pokemonfrienda.com/new/wonder/img/1-2-W01.webp,,,,,,,,,,,,,ワンダー,2だん
 1-2-W02,ミミッキュ,1-2-W02.webp,https://pokemonfrienda.com/new/wonder/img/1-2-W02.webp,,,,,,,,,,,,,ワンダー,2だん
 1-2-W03,ソウブレイズ,1-2-W03.webp,https://pokemonfrienda.com/new/wonder/img/1-2-W03.webp,,,,,,,,,,,,,ワンダー,2だん
@@ -669,9 +669,9 @@ p090,ミュウツー,p090.webp,https://pokemonfrienda.com/new/special/img/p090.w
 p089,テツノイサハ,p089.webp,https://pokemonfrienda.com/new/special/img/p089.webp,288,161,145,100,80,121,3,くさ,リーフブレード,くさ,テラスタル,スペシャル,,スペシャル
 p088,テツノイワオ,p088.webp,https://pokemonfrienda.com/new/special/img/p088.webp,288,161,134,91,78,121,3,じめん,ストーンエッジ,じめん,テラスタル,スペシャル,,スペシャル
 p087,テツノカシラ,p087.webp,https://pokemonfrienda.com/new/special/img/p087.webp,288,161,,113,136,121,5,エスパー,タキオンカッター,,テラスタル,スペシャル,,スペシャル
-p086,カイリュー,p086.webp,https://pokemonfrienda.com/new/special/img/p086.webp,236,131,120,86,91,91,2,ドラゴン,ドラゴンダイブ,ドラゴン,メガシンカ,スペシャル,,スペシャル
+p086,カイリュー,p086.webp,https://pokemonfrienda.com/new/special/img/p086.webp,236,131,120,86,91,91,2,"ドラゴン, ひこう",ドラゴンダイブ,ドラゴン,メガシンカ,スペシャル,,スペシャル
 p085,ギャラドス,p085.webp,https://pokemonfrienda.com/new/special/img/p085.webp,250,160,135,87,67,109,2,"みず, あく",かみくだく,あく,メガシンカ,スペシャル,,スペシャル
-p084,ハッサム,p084.webp,https://pokemonfrienda.com/new/special/img/p084.webp,252,139,145,113,64,51,3,むし,シザークロス,むし,メガシンカ,スペシャル,,スペシャル
+p084,ハッサム,p084.webp,https://pokemonfrienda.com/new/special/img/p084.webp,252,139,145,113,64,51,3,"むし, はがね",シザークロス,むし,メガシンカ,スペシャル,,スペシャル
 p083,ガブリアス,p083.webp,https://pokemonfrienda.com/new/special/img/p083.webp,268,164,132,98,83,88,3,じめん,あなをほる,じめん,メガシンカ,スペシャル,,スペシャル
 p082,イベルタル,p082.webp,https://pokemonfrienda.com/new/special/img/p082.webp,224,136,99,73,99,75,3,あく,あくのはどう,あく,,スペシャル,,スペシャル
 p081,メガメタグロス,p081.webp,https://pokemonfrienda.com/new/special/img/p081.webp,236,,,,,,3,はがね,コメットパンチ,はがね,メガシンカ,スペシャル,,スペシャル
@@ -679,60 +679,60 @@ p080,メガボーマンダ,p080.webp,https://pokemonfrienda.com/new/special/img/
 p079,ミュウツー,p079.webp,https://pokemonfrienda.com/new/special/img/p079.webp,252,137,95,78,131,78,3,エスパー,サイコブレイク,エスパー,スペシャル,スペシャル,,スペシャル
 p078,ウネルミナモ,p078.webp,https://pokemonfrienda.com/new/special/img/p078.webp,280,164,91,99,135,91,5,みず,ハイドロポンプ,みず,テラスタル,スペシャル,,スペシャル
 p077,ウガツホムラ,p077.webp,https://pokemonfrienda.com/new/special/img/p077.webp,280,171,124,130,72,101,3,"ほのお, ドラゴン",だいふんげき,ほのお,テラスタル,スペシャル,,スペシャル
-p076,タケルライコ,p076.webp,https://pokemonfrienda.com/new/special/img/p076.webp,280,192,80,99,147,97,3,でんき,かみなり,でんき,テラスタル,スペシャル,,スペシャル
+p076,タケルライコ,p076.webp,https://pokemonfrienda.com/new/special/img/p076.webp,280,192,80,99,147,97,3,"でんき, ドラゴン",かみなり,でんき,テラスタル,スペシャル,,スペシャル
 p075,ゼルネアス,p075.webp,https://pokemonfrienda.com/new/special/img/p075.webp,224,136,99,73,99,75,3,フェアリー,ムーンフォース,フェアリー,,スペシャル,,スペシャル
 p074,リザードン,p074.webp,https://pokemonfrienda.com/new/special/img/p074.webp,264,148,95,89,122,96,3,ほのお,かえんほうしゃ,ほのお,メガシンカ,スペシャル,,スペシャル
 p073,リザードン,p073.webp,https://pokemonfrienda.com/new/special/img/p073.webp,264,148,95,89,122,96,3,"ほのお, ひこう",かみくだく,あく,メガシンカ,スペシャル,,スペシャル
 p072,リザードン,p072.webp,https://pokemonfrienda.com/new/special/img/p072.webp,244,135,87,81,111,88,3,ほのお,かえんほうしゃ,ほのお,メガシンカ,スペシャル,,スペシャル
-p071,ルカリオ,p071.webp,https://pokemonfrienda.com/new/special/img/p071.webp,240,127,112,73,117,73,3,かくとう,インファイト,かくとう,メガシンカ,スペシャル,,スペシャル
+p071,ルカリオ,p071.webp,https://pokemonfrienda.com/new/special/img/p071.webp,240,127,112,73,117,73,3,"かくとう, はがね",インファイト,かくとう,メガシンカ,スペシャル,,スペシャル
 p070,ゲンガー,p070.webp,https://pokemonfrienda.com/new/special/img/p070.webp,228,117,68,63,132,78,3,ゴースト,シャドーボール,ゴースト,メガシンカ,スペシャル,,スペシャル
-p069,ボーマンダ,p069.webp,https://pokemonfrienda.com/new/special/img/p069.webp,248,140,126,77,104,77,2,ドラゴン,アルティメットドラゴンバーン,ドラゴン,Zわざ,スペシャル,,スペシャル
-p068,サーナイト,p068.webp,https://pokemonfrienda.com/new/special/img/p068.webp,236,125,68,68,127,117,3,フェアリー,マジカルシャイン,フェアリー,テラスタル,スペシャル,,スペシャル
+p069,ボーマンダ,p069.webp,https://pokemonfrienda.com/new/special/img/p069.webp,248,140,126,77,104,77,2,"ドラゴン, ひこう",アルティメットドラゴンバーン,ドラゴン,Zわざ,スペシャル,,スペシャル
+p068,サーナイト,p068.webp,https://pokemonfrienda.com/new/special/img/p068.webp,236,125,68,68,127,117,3,"エスパー, フェアリー",マジカルシャイン,フェアリー,テラスタル,スペシャル,,スペシャル
 p063,ウガツホムラ,p063.webp,https://pokemonfrienda.com/new/special/img/p063.webp,212,130,94,99,55,77,2,"ほのお, ドラゴン",だいふんげき,ほのお,,スペシャル,,スペシャル
 p067,ヤミラミ,p067.webp,https://pokemonfrienda.com/new/special/img/p067.webp,208,122,89,89,77,77,2,"あく, ゴースト",シャドーボール,ゴースト,メガシンカ,スペシャル,,スペシャル
 p066,ウインディ,p066.webp,https://pokemonfrienda.com/new/special/img/p066.webp,264,155,119,88,109,88,5,ほのお,だいもんじ,ほのお,Zわざ,スペシャル,,スペシャル
 p065,ジャラランガ,p065.webp,https://pokemonfrienda.com/new/special/img/p065.webp,264,130,110,125,101,105,3,"ドラゴン, かくとう",ぜんりょくむそうげきれつけん,かくとう,Zわざ,スペシャル,,スペシャル
-p064,ボスゴドラ,p064.webp,https://pokemonfrienda.com/new/special/img/p064.webp,264,139,123,199,69,69,2,はがね,アイアンテール,はがね,Zわざ,スペシャル,,スペシャル
+p064,ボスゴドラ,p064.webp,https://pokemonfrienda.com/new/special/img/p064.webp,264,139,123,199,69,69,2,"はがね, いわ",アイアンテール,はがね,Zわざ,スペシャル,,スペシャル
 p062,セレビィ,p062.webp,https://pokemonfrienda.com/new/special/img/p062.webp,252,148,97,97,97,97,3,くさ,リーフストーム,くさ,Zわざ,スペシャル,,スペシャル
 p061,リザードン,p061.webp,https://pokemonfrienda.com/new/special/img/p061.webp,200,112,72,67,92,73,3,"ほのお, ひこう",かえんほうしゃ,ほのお,,スペシャル,,スペシャル
 p060,ピカチュウ,p060.webp,https://pokemonfrienda.com/new/special/img/p060.webp,184,,,,,,3,でんき,１０まんボルト,でんき,タッグわざ,スペシャル,,スペシャル
 p059,イッカネズミ,p059.webp,https://pokemonfrienda.com/new/special/img/p059.webp,192,,,,,,3,ノーマル,ワイルドボルト,でんき,,スペシャル,,スペシャル
-p058,ホウオウ,p058.webp,https://pokemonfrienda.com/new/special/img/p058.webp,212,116,93,66,79,109,2,ほのお,せいなるほのお,ほのお,スペシャル,スペシャル,,スペシャル
-p057,ルギア,p057.webp,https://pokemonfrienda.com/new/special/img/p057.webp,212,116,66,93,66,109,3,ひこう,エアロブラスト,ひこう,,スペシャル,,スペシャル
-p056,バンギラス,p056.webp,https://pokemonfrienda.com/new/special/img/p056.webp,252,148,128,106,92,97,2,いわ,ストーンエッジ,いわ,Zわざ,スペシャル,,スペシャル
-p055,メタグロス,p055.webp,https://pokemonfrienda.com/new/special/img/p055.webp,252,129,129,124,92,87,3,はがね,コメットパンチ,はがね,Zわざ,スペシャル,,スペシャル
+p058,ホウオウ,p058.webp,https://pokemonfrienda.com/new/special/img/p058.webp,212,116,93,66,79,109,2,"ほのお, ひこう",せいなるほのお,ほのお,スペシャル,スペシャル,,スペシャル
+p057,ルギア,p057.webp,https://pokemonfrienda.com/new/special/img/p057.webp,212,116,66,93,66,109,3,"エスパー, ひこう",エアロブラスト,ひこう,,スペシャル,,スペシャル
+p056,バンギラス,p056.webp,https://pokemonfrienda.com/new/special/img/p056.webp,252,148,128,106,92,97,2,"いわ, あく",ストーンエッジ,いわ,Zわざ,スペシャル,,スペシャル
+p055,メタグロス,p055.webp,https://pokemonfrienda.com/new/special/img/p055.webp,252,129,129,124,92,87,3,"はがね, エスパー",コメットパンチ,はがね,Zわざ,スペシャル,,スペシャル
 p054,ミロカロス,p054.webp,https://pokemonfrienda.com/new/special/img/p054.webp,252,157,66,85,107,132,2,みず,スーパーアクアトルネード,みず,Zわざ,スペシャル,,スペシャル
-p053-ayNdxXS8,ルカリオ,p053-ayNdxXS8.webp,https://pokemonfrienda.com/new/special/img/p053-ayNdxXS8.webp,200,,,,,,3,かくとう,インファイト,かくとう,メガシンカ,スペシャル,,スペシャル
+p053-ayNdxXS8,ルカリオ,p053-ayNdxXS8.webp,https://pokemonfrienda.com/new/special/img/p053-ayNdxXS8.webp,200,,,,,,3,"かくとう, はがね",インファイト,かくとう,メガシンカ,スペシャル,,スペシャル
 p052,ピカチュウ,p052.webp,https://pokemonfrienda.com/new/special/img/p052.webp,200,117,74,55,68,68,2,でんき,10まんボルト,でんき,タッグわざ,スペシャル,,スペシャル
-p051,フシギバナ,p051.webp,https://pokemonfrienda.com/new/special/img/p051.webp,212,121,75,76,91,91,3,くさ,リーフストーム,くさ,メガシンカ,スペシャル,,スペシャル
+p051,フシギバナ,p051.webp,https://pokemonfrienda.com/new/special/img/p051.webp,212,121,75,76,91,91,3,"くさ, どく",リーフストーム,くさ,メガシンカ,スペシャル,,スペシャル
 p050,リザードン,p050.webp,https://pokemonfrienda.com/new/special/img/p050.webp,216,120,77,72,98,78,3,"ほのお, ひこう","かえんほうしゃ, テラバースト","ほのお, ほのお",テラスタル,スペシャル,,スペシャル
 p049,カメックス,p049.webp,https://pokemonfrienda.com/new/special/img/p049.webp,212,120,76,91,78,95,3,みず,ハイドロポンプ,みず,タッグわざ,スペシャル,,スペシャル
-p048,マスカーニャ,p048.webp,https://pokemonfrienda.com/new/special/img/p048.webp,224,123,104,68,77,68,3,くさ,トリックフラワー,くさ,スペシャル,スペシャル,,スペシャル
-p047,ルカリオ,p047.webp,https://pokemonfrienda.com/new/special/img/p047.webp,,,,,,,,,,,,,,スペシャル
+p048,マスカーニャ,p048.webp,https://pokemonfrienda.com/new/special/img/p048.webp,224,123,104,68,77,68,3,"くさ, あく",トリックフラワー,くさ,スペシャル,スペシャル,,スペシャル
+p047,ルカリオ,p047.webp,https://pokemonfrienda.com/new/special/img/p047.webp,,,,,,,,"かくとう, はがね",,,,,,スペシャル
 p046,ピカチュウ,p046.webp,https://pokemonfrienda.com/new/special/img/p046.webp,,,,,,,,,,,,,,スペシャル
 p045,リザードン,p045.webp,https://pokemonfrienda.com/new/special/img/p045.webp,,,,,,,,,,,,,,スペシャル
 p044,トドロクツキ,p044.webp,https://pokemonfrienda.com/new/special/img/p044.webp,,,,,,,,,,,,,,スペシャル
 p043,テツノブジン,p043.webp,https://pokemonfrienda.com/new/special/img/p043.webp,,,,,,,,,,,,,,スペシャル
-p042,デカヌチャン,p042.webp,https://pokemonfrienda.com/new/special/img/p042.webp,,,,,,,,,,,,,,スペシャル
-p041,ケルディオ,p041.webp,https://pokemonfrienda.com/new/special/img/p041.webp,,,,,,,,,,,,,,スペシャル
+p042,デカヌチャン,p042.webp,https://pokemonfrienda.com/new/special/img/p042.webp,,,,,,,,"フェアリー, はがね",,,,,,スペシャル
+p041,ケルディオ,p041.webp,https://pokemonfrienda.com/new/special/img/p041.webp,,,,,,,,"みず, かくとう",,,,,,スペシャル
 p040,デオキシス,p040.webp,https://pokemonfrienda.com/new/special/img/p040.webp,,,,,,,,,,,,,,スペシャル
-p039,アーマーガア,p039.webp,https://pokemonfrienda.com/new/special/img/p039.webp,,,,,,,,,,,,,,スペシャル
+p039,アーマーガア,p039.webp,https://pokemonfrienda.com/new/special/img/p039.webp,,,,,,,,"ひこう, はがね",,,,,,スペシャル
 p038,パーモット,p038.webp,https://pokemonfrienda.com/new/special/img/p038.webp,,,,,,,,,,,,,,スペシャル
 p037,キョジオーン,p037.webp,https://pokemonfrienda.com/new/special/img/p037.webp,,,,,,,,,,,,,,スペシャル
 p036,メルメタル,p036.webp,https://pokemonfrienda.com/new/special/img/p036.webp,,,,,,,,,,,,,,スペシャル
 p035,ピカチュウ,p035.webp,https://pokemonfrienda.com/new/special/img/p035.webp,,,,,,,,,,,,,,スペシャル
-p034,レックウザ,p034.webp,https://pokemonfrienda.com/new/special/img/p034.webp,,,,,,,,,,,,,,スペシャル
+p034,レックウザ,p034.webp,https://pokemonfrienda.com/new/special/img/p034.webp,,,,,,,,"ドラゴン, ひこう",,,,,,スペシャル
 p033,レシラム,p033.webp,https://pokemonfrienda.com/new/special/img/p033.webp,,,,,,,,,,,,,,スペシャル
 p032,ゼクロム,p032.webp,https://pokemonfrienda.com/new/special/img/p032.webp,,,,,,,,,,,,,,スペシャル
 p031,キュレム,p031.webp,https://pokemonfrienda.com/new/special/img/p031.webp,,,,,,,,,,,,,,スペシャル
 p030,オーガポン,p030.webp,https://pokemonfrienda.com/new/special/img/p030.webp,,,,,,,,,,,,,,スペシャル
 p029,テラパゴス,p029.webp,https://pokemonfrienda.com/new/special/img/p029.webp,,,,,,,,,,,,,,スペシャル
-p028,マスカーニャ,p028.webp,https://pokemonfrienda.com/new/special/img/p028.webp,,,,,,,,,,,,,,スペシャル
-p027,ラウドボーン,p027.webp,https://pokemonfrienda.com/new/special/img/p027.webp,,,,,,,,,,,,,,スペシャル
-p026,ウェーニバル,p026.webp,https://pokemonfrienda.com/new/special/img/p026.webp,,,,,,,,,,,,,,スペシャル
-p025,ゲッコウガ,p025.webp,https://pokemonfrienda.com/new/special/img/p025.webp,,,,,,,,,,,,,,スペシャル
-p024,ルギア,p024.webp,https://pokemonfrienda.com/new/special/img/p024.webp,,,,,,,,,,,,,,スペシャル
-p023,ホウオウ,p023.webp,https://pokemonfrienda.com/new/special/img/p023.webp,,,,,,,,,,,,,,スペシャル
+p028,マスカーニャ,p028.webp,https://pokemonfrienda.com/new/special/img/p028.webp,,,,,,,,"くさ, あく",,,,,,スペシャル
+p027,ラウドボーン,p027.webp,https://pokemonfrienda.com/new/special/img/p027.webp,,,,,,,,"ほのお, ゴースト",,,,,,スペシャル
+p026,ウェーニバル,p026.webp,https://pokemonfrienda.com/new/special/img/p026.webp,,,,,,,,"みず, かくとう",,,,,,スペシャル
+p025,ゲッコウガ,p025.webp,https://pokemonfrienda.com/new/special/img/p025.webp,,,,,,,,"みず, あく",,,,,,スペシャル
+p024,ルギア,p024.webp,https://pokemonfrienda.com/new/special/img/p024.webp,,,,,,,,"エスパー, ひこう",,,,,,スペシャル
+p023,ホウオウ,p023.webp,https://pokemonfrienda.com/new/special/img/p023.webp,,,,,,,,"ほのお, ひこう",,,,,,スペシャル
 p022,オーガポン,p022.webp,https://pokemonfrienda.com/new/special/img/p022.webp,,,,,,,,,,,,,,スペシャル
 p021,ピカチュウ,p021.webp,https://pokemonfrienda.com/new/special/img/p021.webp,,,,,,,,,,,,,,スペシャル
 p018,コライドン,p018.webp,https://pokemonfrienda.com/new/special/img/p018.webp,,,,,,,,,,,,,,スペシャル
@@ -740,20 +740,20 @@ p017,ミライドン,p017.webp,https://pokemonfrienda.com/new/special/img/p017.w
 p016,ピカチュウ,p016.webp,https://pokemonfrienda.com/new/special/img/p016.webp,,,,,,,,,,,,,,スペシャル
 p020,リザードン,p020.webp,https://pokemonfrienda.com/new/special/img/p020.webp,,,,,,,,,,,,,,スペシャル
 p019,ソウブレイズ,p019.webp,https://pokemonfrienda.com/new/special/img/p019.webp,,,,,,,,,,,,,,スペシャル
-p015,ヘルガー,p015.webp,https://pokemonfrienda.com/new/special/img/p015.webp,,,,,,,,,,,,,,スペシャル
+p015,ヘルガー,p015.webp,https://pokemonfrienda.com/new/special/img/p015.webp,,,,,,,,"あく, ほのお",,,,,,スペシャル
 p014,セレビィ,p014.webp,https://pokemonfrienda.com/new/special/img/p014.webp,,,,,,,,,,,,,,スペシャル
-p013,デカヌチャン,p013.webp,https://pokemonfrienda.com/new/special/img/p013.webp,,,,,,,,,,,,,,スペシャル
+p013,デカヌチャン,p013.webp,https://pokemonfrienda.com/new/special/img/p013.webp,,,,,,,,"フェアリー, はがね",,,,,,スペシャル
 p012,オーガポン,p012.webp,https://pokemonfrienda.com/new/special/img/p012.webp,,,,,,,,,,,,,,スペシャル
 p011,ピカチュウ,p011.webp,https://pokemonfrienda.com/new/special/img/p011.webp,,,,,,,,,,,,,,スペシャル
 p010,ウインディ,p010.webp,https://pokemonfrienda.com/new/special/img/p010.webp,,,,,,,,,,,,,,スペシャル
-p009,マスカーニャ,p009.webp,https://pokemonfrienda.com/new/special/img/p009.webp,,,,,,,,,,,,,,スペシャル
-p008,ラウドボーン,p008.webp,https://pokemonfrienda.com/new/special/img/p008.webp,,,,,,,,,,,,,,スペシャル
-p007,ウェーニバル,p007.webp,https://pokemonfrienda.com/new/special/img/p007.webp,,,,,,,,,,,,,,スペシャル
-p006,マスカーニャ,p006.webp,https://pokemonfrienda.com/new/special/img/p006.webp,,,,,,,,,,,,,,スペシャル
-p005,ラウドボーン,p005.webp,https://pokemonfrienda.com/new/special/img/p005.webp,,,,,,,,,,,,,,スペシャル
-p004,ウェーニバル,p004.webp,https://pokemonfrienda.com/new/special/img/p004.webp,,,,,,,,,,,,,,スペシャル
+p009,マスカーニャ,p009.webp,https://pokemonfrienda.com/new/special/img/p009.webp,,,,,,,,"くさ, あく",,,,,,スペシャル
+p008,ラウドボーン,p008.webp,https://pokemonfrienda.com/new/special/img/p008.webp,,,,,,,,"ほのお, ゴースト",,,,,,スペシャル
+p007,ウェーニバル,p007.webp,https://pokemonfrienda.com/new/special/img/p007.webp,,,,,,,,"みず, かくとう",,,,,,スペシャル
+p006,マスカーニャ,p006.webp,https://pokemonfrienda.com/new/special/img/p006.webp,,,,,,,,"くさ, あく",,,,,,スペシャル
+p005,ラウドボーン,p005.webp,https://pokemonfrienda.com/new/special/img/p005.webp,,,,,,,,"ほのお, ゴースト",,,,,,スペシャル
+p004,ウェーニバル,p004.webp,https://pokemonfrienda.com/new/special/img/p004.webp,,,,,,,,"みず, かくとう",,,,,,スペシャル
 p003,ニャローテ,p003.webp,https://pokemonfrienda.com/new/special/img/p003.webp,,,,,,,,,,,,,,スペシャル
-p002,ルカリオ,p002.webp,https://pokemonfrienda.com/new/special/img/p002.webp,,,,,,,,,,,,,,スペシャル
+p002,ルカリオ,p002.webp,https://pokemonfrienda.com/new/special/img/p002.webp,,,,,,,,"かくとう, はがね",,,,,,スペシャル
 p001,ピカチュウ,p001.webp,https://pokemonfrienda.com/new/special/img/p001.webp,,,,,,,,,,,,,,スペシャル
 2-4-W02,ブラッキー,2-4-W02.webp,https://pokemonfrienda.com/new/wonder/img/2-4-W02.webp,,,,,,,,,,,,,ワンダー,ベストタッグ4だん
 2-4-W03,リーフィア,2-4-W03.webp,https://pokemonfrienda.com/new/wonder/img/2-4-W03.webp,,,,,,,,,,,,,ワンダー,ベストタッグ4だん
