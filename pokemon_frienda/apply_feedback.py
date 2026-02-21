@@ -46,15 +46,19 @@ def apply_feedback():
 
             # ID Formatting Fix: Handle Google Sheets/Excel date auto-formatting
             # Example: 1-5-2015 -> 1-5-015
-            if item_id not in data and item_id.count('-') == 2:
+            # Example: 1-1-2004 -> 1-1-004
+            if item_id not in data and item_id.count('-') >= 2:
                 parts = item_id.split('-')
-                if len(parts[2]) == 4 and parts[2].startswith('20'):
+                last_part = parts[-1]
+                if len(last_part) == 4 and last_part.startswith('20'):
                     # Try converting 20XX -> 0XX
-                    new_suffix = '0' + parts[2][2:]
+                    new_suffix = '0' + last_part[2:]
                     fixed_id = f"{parts[0]}-{parts[1]}-{new_suffix}"
                     if fixed_id in data:
                         print(f"Auto-corrected ID: {item_id} -> {fixed_id}")
                         item_id = fixed_id
+                    elif f"{parts[0]}-{parts[1]}-{last_part}" in data:
+                        pass # Valid 4 digit ID? User uses 3 digits mostly.
 
             if item_id in data:
                 if field in fieldnames:
@@ -73,7 +77,15 @@ def apply_feedback():
         with open(DB_FILE, 'w', encoding='utf-8', newline='') as f:
             writer = csv.DictWriter(f, fieldnames=fieldnames)
             writer.writeheader()
-            writer.writerows(data.values())
+            
+            # Remove None keys dynamically in case of trailing commas in original CSV
+            clean_data = []
+            for row in data.values():
+                if None in row:
+                    del row[None]
+                clean_data.append(row)
+                
+            writer.writerows(clean_data)
         print(f"Successfully applied {applied_count} changes.")
     else:
         print("No changes applied.")
