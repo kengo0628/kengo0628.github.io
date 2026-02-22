@@ -374,7 +374,12 @@ def main():
         writer.writeheader()
         writer.writerows(updated_rows)
 
-    print(f"Done! Saved complete database to {OUTPUT_CSV}")
+    # Run type consolidation step automatically to resolve fluctuations
+    import consolidate_types
+    print("\nRunning type consolidation to resolve any inconsistencies...")
+    consolidate_types.consolidate_types()
+
+    print(f"\nDone! Saved complete database to {OUTPUT_CSV}")
 
 if __name__ == "__main__":
     main()
