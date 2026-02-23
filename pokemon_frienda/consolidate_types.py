@@ -5,7 +5,7 @@ import shutil
 DB_CSV = "frienda_database_complete.csv"
 BACKUP_CSV = "frienda_database_complete_type_backup.csv"
 
-EXCLUDE_POKEMON = {"オーガポン", "テラパゴス", "ウインディ"}
+EXCLUDE_POKEMON = {"オーガポン", "テラパゴス", "ウインディ", "ピカチュウ"}
 
 def parse_types(type_str):
     # Splits by common delimiters and returns a frozenset
