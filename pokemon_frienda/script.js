@@ -273,17 +273,57 @@ document.addEventListener('DOMContentLoaded', () => {
             if (sortValue === 'atk_desc') {
                 return (parseInt(b.ATK) || 0) - (parseInt(a.ATK) || 0);
             }
+            if (sortValue === 'atk_asc') {
+                const valA = parseInt(a.ATK) || 0;
+                const valB = parseInt(b.ATK) || 0;
+                if (valA === 0 && valB === 0) return 0;
+                if (valA === 0) return 1;
+                if (valB === 0) return -1;
+                return valA - valB;
+            }
             if (sortValue === 'def_desc') {
                 return (parseInt(b.DEF) || 0) - (parseInt(a.DEF) || 0);
+            }
+            if (sortValue === 'def_asc') {
+                const valA = parseInt(a.DEF) || 0;
+                const valB = parseInt(b.DEF) || 0;
+                if (valA === 0 && valB === 0) return 0;
+                if (valA === 0) return 1;
+                if (valB === 0) return -1;
+                return valA - valB;
             }
             if (sortValue === 'sp_atk_desc') {
                 return (parseInt(b['SP.ATK']) || 0) - (parseInt(a['SP.ATK']) || 0);
             }
+            if (sortValue === 'sp_atk_asc') {
+                const valA = parseInt(a['SP.ATK']) || 0;
+                const valB = parseInt(b['SP.ATK']) || 0;
+                if (valA === 0 && valB === 0) return 0;
+                if (valA === 0) return 1;
+                if (valB === 0) return -1;
+                return valA - valB;
+            }
             if (sortValue === 'sp_def_desc') {
                 return (parseInt(b['SP.DEF']) || 0) - (parseInt(a['SP.DEF']) || 0);
             }
+            if (sortValue === 'sp_def_asc') {
+                const valA = parseInt(a['SP.DEF']) || 0;
+                const valB = parseInt(b['SP.DEF']) || 0;
+                if (valA === 0 && valB === 0) return 0;
+                if (valA === 0) return 1;
+                if (valB === 0) return -1;
+                return valA - valB;
+            }
             if (sortValue === 'speed_desc') {
                 return (parseInt(b.Speed) || 0) - (parseInt(a.Speed) || 0);
+            }
+            if (sortValue === 'speed_asc') {
+                const valA = parseInt(a.Speed) || 0;
+                const valB = parseInt(b.Speed) || 0;
+                if (valA === 0 && valB === 0) return 0;
+                if (valA === 0) return 1;
+                if (valB === 0) return -1;
+                return valA - valB;
             }
             if (sortValue === 'hp_desc') {
                 return (parseInt(b.HP) || 0) - (parseInt(a.HP) || 0);
