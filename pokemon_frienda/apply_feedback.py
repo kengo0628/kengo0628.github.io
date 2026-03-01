@@ -4,7 +4,9 @@ import sys
 import shutil
 from pathlib import Path
 
-DB_FILE = "frienda_database_complete.csv"
+import os
+
+DB_FILE = os.environ.get("FRIENDA_OUTPUT_CSV", "frienda_database_complete.csv")
 FEEDBACK_FILE = "feedback.csv"  # The file provided by user
 BACKUP_FILE = "frienda_database_complete_backup.csv"
 

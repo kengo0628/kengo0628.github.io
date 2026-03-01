@@ -15,7 +15,7 @@ load_dotenv() # Load variables from .env
 API_KEY = os.environ.get("GEMINI_API_KEY")
 IMAGE_DIR = "frienda_images"
 CSV_FILE = "frienda_database.csv"
-OUTPUT_CSV = "frienda_database_complete.csv"
+OUTPUT_CSV = os.environ.get("FRIENDA_OUTPUT_CSV", "frienda_database_complete.csv")
 
 def setup_gemini():
     if not API_KEY:
@@ -25,6 +25,73 @@ def setup_gemini():
     
     client = genai.Client(api_key=API_KEY)
     return client
+
+# --- Few-Shot Prompting Setup ---
+few_shot_cache = None
+
+def get_few_shot_examples():
+    global few_shot_cache
+    if few_shot_cache is not None:
+        return few_shot_cache
+        
+    examples = []
+    
+    # Example 1: 1-1-001_kira.webp (Koraidon - 5 Star, Speed 4)
+    img1_path = os.path.join(IMAGE_DIR, "1-1-001_kira.webp")
+    if os.path.exists(img1_path):
+        try:
+            ex1_img = Image.open(img1_path).copy()
+            ex1_output = '''{
+  "PokeEne": "244",
+  "HP": "130",
+  "ATK": "113",
+  "DEF": "97",
+  "SP_ATK": "73",
+  "SP_DEF": "85",
+  "Speed": "4",
+  "Type": "かくとう, ドラゴン",
+  "Move": "アクセルブレイク",
+  "MoveType": "かくとう",
+  "Special": "",
+  "Rarity": "5"
+}'''
+            examples.extend([
+                "【入出力の例1（星5、すばやさ4の例）】以下の画像から情報を抽出しなさい:",
+                ex1_img,
+                "出力結果:\n" + ex1_output
+            ])
+        except Exception as e:
+            print(f"Could not load example 1: {e}")
+
+    # Example 2: 1-1-016_kira.webp (Blastoise - 4 Star, Speed 2)
+    img2_path = os.path.join(IMAGE_DIR, "1-1-016_kira.webp")
+    if os.path.exists(img2_path):
+        try:
+            ex2_img = Image.open(img2_path).copy()
+            ex2_output = '''{
+  "PokeEne": "180",
+  "HP": "102",
+  "ATK": "64",
+  "DEF": "77",
+  "SP_ATK": "66",
+  "SP_DEF": "80",
+  "Speed": "2",
+  "Type": "みず",
+  "Move": "ハイドロポンプ",
+  "MoveType": "みず",
+  "Special": "",
+  "Rarity": "4"
+}'''
+            examples.extend([
+                "【入出力の例2（星4、すばやさ2の例）】以下の画像から情報を抽出しなさい:",
+                ex2_img,
+                "出力結果:\n" + ex2_output
+            ])
+        except Exception as e:
+            print(f"Could not load example 2: {e}")
+
+    few_shot_cache = examples
+    return examples
 
 def analyze_image(client, image_path):
     print(f"Analyzing {image_path}...")
@@ -45,25 +112,36 @@ def analyze_image(client, image_path):
             "DEF": "DEF(防御)の数値",
             "SP_ATK": "SP.ATK(特攻)の数値",
             "SP_DEF": "SP.DEF(特防)の数値",
-            "Speed": "素早さゲージ（右下にある「>>>>>」のような矢印の列）。**黄色く明るく点灯している矢印の数だけ**を整数（1〜5）でカウントすること。**暗い灰色の矢印は絶対に数えないでください**。例えば、3つ光って2つ暗ければ『3』、全部暗ければ『1』（最低でも1つは光っているはず）と判断すること。",
+            "Speed": "裏面の「すばやさ」という文字の下に矢羽が5つ並んでいます。その中で黄色く塗られている個数がすばやさの数値（1〜5の整数）です。グレーで塗られている矢羽は数えないでください。",
             "Type": "ポケモンのタイプアイコンの属性。**タイプが2種類ある場合は必ず2つとも読み取り、カンマと半角スペース区切りで出力してください**（例: じめん, ドラゴン や ほのお, ひこう）。必ずカタカナまたはひらがなで表記すること。漢字は不可。※わざのタイプ(MoveType)は1種類ですが、ポケモンのTypeは最大2種類あることに特に注意してください。",
             "Move": "わざの名前（ピックに記載されている通りの日本語表記で。英語に翻訳しないこと）",
             "MoveType": "わざのタイプ (必ずカタカナまたはひらがなで表記すること。漢字は不可)",
             "Special": "特殊ギミックがある場合のみ出力 (メガシンカ, テラスタル, タッグわざ, Zわざ)。なければ空文字",
-            "Rarity": "グレード（★）の数。カードの右上や名前の近くにある星のアイコン数を数えてください（2〜5個）。星がない場合や「スペシャル」と書かれている場合は『スペシャル』と出力してください。"
+            "Rarity": "フレンダピックの表面・裏面それぞれに、キャラ名の上に星が2〜5個並んでいます。星は重なって描かれているため、完全な形の星を数えようとすると誤認識する可能性があります。星型の頂点の山の数を数えるなどして、星がいくつあるか（2〜5の整数）判定してください。星がない場合や「スペシャル」と書かれている場合は文字列で『スペシャル』と出力してください。"
         }
     """
+    
+    # Prefix prompt with few-shot examples
+    contents = get_few_shot_examples()
+    contents.extend([
+        "【本番の推論】以下の画像から情報を抽出し、JSONのみを出力しなさい:",
+        prompt,
+        img
+    ])
     
     # New SDK usage
     try:
         response = client.models.generate_content(
             model='gemini-2.5-flash',
-            contents=[prompt, img],
+            contents=contents,
             config=types.GenerateContentConfig(
                 response_mime_type="application/json"
             )
         )
-        return json.loads(response.text)
+        parsed_data = json.loads(response.text)
+        if isinstance(parsed_data, list) and len(parsed_data) > 0:
+            parsed_data = parsed_data[0]
+        return parsed_data
     except Exception as e:
         error_str = str(e)
         if "429" in error_str or "quota" in error_str.lower() or "RESOURCE_EXHAUSTED" in error_str:
@@ -380,6 +458,10 @@ def main():
     consolidate_types.consolidate_types()
 
     print(f"\nDone! Saved complete database to {OUTPUT_CSV}")
+
+    if stop_processing:
+        import sys
+        sys.exit(2)
 
 if __name__ == "__main__":
     main()

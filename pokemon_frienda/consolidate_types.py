@@ -1,9 +1,10 @@
 import csv
 import os
+import sys
 import shutil
 
-DB_CSV = "frienda_database_complete.csv"
-BACKUP_CSV = "frienda_database_complete_type_backup.csv"
+DB_CSV = os.environ.get("FRIENDA_OUTPUT_CSV", "frienda_database_complete.csv")
+BACKUP_CSV = "frienda_database_complete_backup.csv"
 
 EXCLUDE_POKEMON = {"オーガポン", "テラパゴス", "ウインディ", "ピカチュウ"}
 
