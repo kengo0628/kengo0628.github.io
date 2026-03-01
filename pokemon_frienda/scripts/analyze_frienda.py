@@ -14,7 +14,7 @@ class QuotaExceededError(Exception):
 load_dotenv() # Load variables from .env
 API_KEY = os.environ.get("GEMINI_API_KEY")
 IMAGE_DIR = "frienda_images"
-CSV_FILE = "frienda_database.csv"
+CSV_FILE = "data/frienda_database.csv"
 OUTPUT_CSV = os.environ.get("FRIENDA_OUTPUT_CSV", "frienda_database_complete.csv")
 
 def setup_gemini():

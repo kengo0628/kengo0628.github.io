@@ -1,6 +1,6 @@
 import csv
 
-OLD_CSV = "old_frienda.csv"
+OLD_CSV = "archive/old_frienda.csv"
 CUR_CSV = "frienda_database_complete.csv"
 
 old_data = {row["ID"]: row for row in csv.DictReader(open(OLD_CSV, "r")) if row.get("ID")}

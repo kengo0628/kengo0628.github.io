@@ -9,7 +9,7 @@ import sys
 BASE_URL = "https://pokemonfrienda.com/new/" # Fallback or keep for reference
 TARGET_URL = "https://pokemonfrienda.com/new/bt4.html"
 IMAGE_DIR = "frienda_images"
-CSV_FILE = "frienda_database.csv"
+CSV_FILE = "data/frienda_database.csv"
 
 def main():
     # Handle command line argument for URL

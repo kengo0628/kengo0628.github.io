@@ -2,8 +2,8 @@ import csv
 import os
 
 CURRENT_CSV = "frienda_database_complete.csv"
-OLD_CSV = "old_frienda.csv"
-RESTORED_CSV = "frienda_database_complete_restored.csv"
+OLD_CSV = "archive/old_frienda.csv"
+RESTORED_CSV = "archive/frienda_database_complete_restored.csv"
 
 def restore_data():
     print("Loading old data...")

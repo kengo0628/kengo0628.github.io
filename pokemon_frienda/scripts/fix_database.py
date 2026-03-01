@@ -1,9 +1,9 @@
 import csv
 import os
 
-DB_CSV = "frienda_database.csv"
+DB_CSV = "data/frienda_database.csv"
 COMP_CSV = "frienda_database_complete.csv"
-TEMP_CSV = "frienda_database_complete_fixed.csv"
+TEMP_CSV = "data/frienda_database_complete_fixed.csv"
 
 def align_and_fix():
     print("Step 1: Analyzing existing IDs in complete CSV...")

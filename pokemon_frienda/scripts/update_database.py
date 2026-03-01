@@ -4,7 +4,7 @@ import shutil
 import subprocess
 
 DB_CSV = "frienda_database_complete.csv"
-BACKUP_CSV = "frienda_database_complete_rebuild_backup.csv"
+BACKUP_CSV = "archive/frienda_database_complete_rebuild_backup.csv"
 
 def run_script(script_name):
     print(f"\n========================================")
@@ -12,7 +12,7 @@ def run_script(script_name):
     print(f"========================================")
     try:
         # Run the script using Python and stream output
-        result = subprocess.run([sys.executable, script_name])
+        result = subprocess.run([sys.executable, os.path.join("scripts", script_name)])
         return result.returncode == 0
     except Exception as e:
         print(f"Exception while running {script_name}: {e}")
@@ -26,7 +26,7 @@ def main():
         rebuild = True
         
     # Zero-downtime strategy: write to a temporary file during rebuild
-    rebuild_csv = "frienda_database_rebuild.csv"
+    rebuild_csv = "data/frienda_database_rebuild.csv"
     
     if rebuild:
         print(f"⚠️  --rebuild フラグが指定されました。（ダウンタイムゼロ再構築モード）")
@@ -49,16 +49,16 @@ def main():
         return # Force stop the pipeline if we haven't finished the rebuild
         
     # 2. ユーザー報告パッチの適用 (apply_feedback.py)
-    if os.path.exists("feedback.csv"):
+    if os.path.exists("data/feedback.csv"):
         run_script("apply_feedback.py")
     else:
-        print("\nℹ️ feedback.csv が見つからないため、ユーザー報告のパッチ適用をスキップします。")
+        print("\nℹ️ data/feedback.csv が見つからないため、ユーザー報告のパッチ適用をスキップします。")
         
     # 3. タイプの表記揺れ統一 (consolidate_types.py)
     run_script("consolidate_types.py")
     
     # 4. ピカチュウの例外対応 (revert_pikachu.py)
-    if os.path.exists("revert_pikachu.py"):
+    if os.path.exists("scripts/revert_pikachu.py"):
         run_script("revert_pikachu.py")
 
     # 5. Swap the live database ONLY if rebuild finished successfully

@@ -3,7 +3,7 @@ import os
 import shutil
 
 DB_CSV = os.environ.get("FRIENDA_OUTPUT_CSV", "frienda_database_complete.csv")
-BACKUP_CSV = "frienda_database_complete_pikachu_backup.csv"
+BACKUP_CSV = "archive/frienda_database_complete_pikachu_backup.csv"
 
 def revert_pikachu():
     with open(DB_CSV, 'r', encoding='utf-8') as f:

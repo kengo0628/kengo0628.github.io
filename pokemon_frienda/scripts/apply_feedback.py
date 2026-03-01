@@ -7,8 +7,8 @@ from pathlib import Path
 import os
 
 DB_FILE = os.environ.get("FRIENDA_OUTPUT_CSV", "frienda_database_complete.csv")
-FEEDBACK_FILE = "feedback.csv"  # The file provided by user
-BACKUP_FILE = "frienda_database_complete_backup.csv"
+FEEDBACK_FILE = "data/feedback.csv"  # The file provided by user
+BACKUP_FILE = "archive/frienda_database_complete_backup.csv"
 
 def get_field_mapping(header_row):
     """Maps feedback CSV headers to DB CSV headers."""
@@ -19,7 +19,7 @@ def get_field_mapping(header_row):
 def apply_feedback():
     if not Path(FEEDBACK_FILE).exists():
         print(f"Error: Feedback file '{FEEDBACK_FILE}' not found.")
-        print("Please download the Google Sheet as CSV and rename it to 'feedback.csv'.")
+        print("Please download the Google Sheet as CSV and rename it to 'data/feedback.csv'.")
         return
 
     # Backup
@@ -38,7 +38,7 @@ def apply_feedback():
         reader = csv.DictReader(f)
         # Check headers
         if 'ID' not in reader.fieldnames or 'Field' not in reader.fieldnames or 'Value' not in reader.fieldnames:
-             print("Error: feedback.csv must have 'ID', 'Field', and 'Value' columns.")
+             print("Error: data/feedback.csv must have 'ID', 'Field', and 'Value' columns.")
              return
 
         for row in reader:
