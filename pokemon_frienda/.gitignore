@@ -15,9 +15,13 @@ venv/
 .env
 frienda_images/
 *.log
+archive/
+scripts/test/
 
 # Data
 *.csv
 # Whitelist the final output for the web app
 !frienda_database_complete.csv
-FEEDBACK_WORKFLOW.md
+
+# Docs
+docs/FEEDBACK_WORKFLOW.md
