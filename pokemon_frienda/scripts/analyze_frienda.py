@@ -36,59 +36,167 @@ def get_few_shot_examples():
         
     examples = []
     
-    # Example 1: 1-1-001_kira.webp (Koraidon - 5 Star, Speed 4)
-    img1_path = os.path.join(IMAGE_DIR, "1-1-001_kira.webp")
+    # Example 1: 2-4-002_kira.webp (Giratina - 5 Star, High Stats, No Special)
+    img1_path = os.path.join(IMAGE_DIR, "2-4-002_kira.webp")
     if os.path.exists(img1_path):
         try:
             ex1_img = Image.open(img1_path).copy()
             ex1_output = '''{
-  "PokeEne": "244",
-  "HP": "130",
-  "ATK": "113",
-  "DEF": "97",
-  "SP_ATK": "73",
-  "SP_DEF": "85",
+  "PokeEne": "348",
+  "HP": "238",
+  "ATK": "141",
+  "DEF": "119",
+  "SP_ATK": "141",
+  "SP_DEF": "119",
   "Speed": "4",
-  "Type": "かくとう, ドラゴン",
-  "Move": "アクセルブレイク",
-  "MoveType": "かくとう",
+  "Type": "ゴースト, ドラゴン",
+  "Move": "シャドーダイブ",
+  "MoveType": "ゴースト",
   "Special": "",
   "Rarity": "5"
 }'''
             examples.extend([
-                "【入出力の例1（星5、すばやさ4の例）】以下の画像から情報を抽出しなさい:",
+                "【入出力の例1（星5、すばやさ4、特殊ギミックなしの例）】以下の画像から情報を抽出しなさい:",
                 ex1_img,
                 "出力結果:\n" + ex1_output
             ])
         except Exception as e:
             print(f"Could not load example 1: {e}")
 
-    # Example 2: 1-1-016_kira.webp (Blastoise - 4 Star, Speed 2)
-    img2_path = os.path.join(IMAGE_DIR, "1-1-016_kira.webp")
+    # Example 2: 2-4-007_kira.webp (Victini - 5 Star, Z-Move)
+    img2_path = os.path.join(IMAGE_DIR, "2-4-007_kira.webp")
     if os.path.exists(img2_path):
         try:
             ex2_img = Image.open(img2_path).copy()
             ex2_output = '''{
-  "PokeEne": "180",
-  "HP": "102",
-  "ATK": "64",
-  "DEF": "77",
-  "SP_ATK": "66",
-  "SP_DEF": "80",
-  "Speed": "2",
-  "Type": "みず",
-  "Move": "ハイドロポンプ",
-  "MoveType": "みず",
-  "Special": "",
-  "Rarity": "4"
+  "PokeEne": "316",
+  "HP": "184",
+  "ATK": "121",
+  "DEF": "121",
+  "SP_ATK": "121",
+  "SP_DEF": "121",
+  "Speed": "4",
+  "Type": "エスパー, ほのお",
+  "Move": "Vジェネレート",
+  "MoveType": "ほのお",
+  "Special": "Zわざ",
+  "Rarity": "5"
 }'''
             examples.extend([
-                "【入出力の例2（星4、すばやさ2の例）】以下の画像から情報を抽出しなさい:",
+                "【入出力の例2（星5、すばやさ4、Zわざの例）】以下の画像から情報を抽出しなさい:",
                 ex2_img,
                 "出力結果:\n" + ex2_output
             ])
         except Exception as e:
             print(f"Could not load example 2: {e}")
+            
+    # Example 3: 2-4-011_kira.webp (Talonflame - 4 Star, No Special)
+    img3_path = os.path.join(IMAGE_DIR, "2-4-011_kira.webp")
+    if os.path.exists(img3_path):
+        try:
+            ex3_img = Image.open(img3_path).copy()
+            ex3_output = '''{
+  "PokeEne": "252",
+  "HP": "148",
+  "ATK": "92",
+  "DEF": "81",
+  "SP_ATK": "84",
+  "SP_DEF": "79",
+  "Speed": "4",
+  "Type": "ほのお, ひこう",
+  "Move": "ブレイブバード",
+  "MoveType": "ひこう",
+  "Special": "タッグわざ",
+  "Rarity": "4"
+}'''
+            examples.extend([
+                "【入出力の例3（星4、すばやさ4、タッグわざの例）】以下の画像から情報を抽出しなさい:",
+                ex3_img,
+                "出力結果:\n" + ex3_output
+            ])
+        except Exception as e:
+            print(f"Could not load example 3: {e}")
+
+    # Example 4: 2-4-005_kira.webp (Dragonite - 5 Star, Mega Evolution)
+    img4_path = os.path.join(IMAGE_DIR, "2-4-005_kira.webp")
+    if os.path.exists(img4_path):
+        try:
+            ex4_img = Image.open(img4_path).copy()
+            ex4_output = '''{
+  "PokeEne": "316",
+  "HP": "173",
+  "ATK": "160",
+  "DEF": "115",
+  "SP_ATK": "121",
+  "SP_DEF": "121",
+  "Speed": "3",
+  "Type": "ドラゴン, ひこう",
+  "Move": "ドラゴンダイブ",
+  "MoveType": "ひこう",
+  "Special": "メガシンカ",
+  "Rarity": "5"
+}'''
+            examples.extend([
+                "【入出力の例4（星5、すばやさ3、メガシンカの例）】以下の画像から情報を抽出しなさい:",
+                ex4_img,
+                "出力結果:\n" + ex4_output
+            ])
+        except Exception as e:
+            print(f"Could not load example 4: {e}")
+            
+    # Example 5: 2-4-023_kira.webp (Terapagos - 4 Star, Terastal)
+    img5_path = os.path.join(IMAGE_DIR, "2-4-023_kira.webp")
+    if os.path.exists(img5_path):
+        try:
+            ex5_img = Image.open(img5_path).copy()
+            ex5_output = '''{
+  "PokeEne": "280",
+  "HP": "157",
+  "ATK": "101",
+  "DEF": "117",
+  "SP_ATK": "112",
+  "SP_DEF": "117",
+  "Speed": "3",
+  "Type": "ノーマル",
+  "Move": "テラクラスター",
+  "MoveType": "ステラ",
+  "Special": "テラスタル",
+  "Rarity": "4"
+}'''
+            examples.extend([
+                "【入出力の例5（星4、すばやさ3、テラスタルの例）】以下の画像から情報を抽出しなさい:",
+                ex5_img,
+                "出力結果:\n" + ex5_output
+            ])
+        except Exception as e:
+            print(f"Could not load example 5: {e}")
+
+    # Example 6: 2-4-027.webp (Quilladin - 2 Star, Low Stats, Speed 2, No Special)
+    img6_path = os.path.join(IMAGE_DIR, "2-4-027.webp")
+    if os.path.exists(img6_path):
+        try:
+            ex6_img = Image.open(img6_path).copy()
+            ex6_output = '''{
+  "PokeEne": "160",
+  "HP": "101",
+  "ATK": "68",
+  "DEF": "82",
+  "SP_ATK": "50",
+  "SP_DEF": "52",
+  "Speed": "2",
+  "Type": "くさ",
+  "Move": "くさわけ",
+  "MoveType": "くさ",
+  "Special": "",
+  "Rarity": "2"
+}'''
+            examples.extend([
+                "【入出力の例6（星2、すばやさ2、特殊ギミックなしの例）】以下の画像から情報を抽出しなさい:",
+                ex6_img,
+                "出力結果:\n" + ex6_output
+            ])
+        except Exception as e:
+            print(f"Could not load example 6: {e}")
 
     few_shot_cache = examples
     return examples
@@ -122,7 +230,7 @@ def analyze_image(client, image_path):
     """
     
     # Prefix prompt with few-shot examples
-    contents = get_few_shot_examples()
+    contents = get_few_shot_examples().copy()
     contents.extend([
         "【本番の推論】以下の画像から情報を抽出し、JSONのみを出力しなさい:",
         prompt,
@@ -144,8 +252,8 @@ def analyze_image(client, image_path):
         return parsed_data
     except Exception as e:
         error_str = str(e)
-        if "429" in error_str or "quota" in error_str.lower() or "RESOURCE_EXHAUSTED" in error_str:
-                print(f"!!! QUOTA EXCEEDED: Stopping future requests. !!!")
+        if "429" in error_str or "quota" in error_str.lower() or "RESOURCE_EXHAUSTED" in error_str or "503" in error_str or "UNAVAILABLE" in error_str:
+                print(f"!!! API ERROR (Quota or High Demand): Stopping future requests. !!!")
                 raise QuotaExceededError(e)
 
         if "404" in error_str or "NOT_FOUND" in error_str:
@@ -286,6 +394,8 @@ def main():
             series = "ベストタッグ3だん"
         elif item_id.startswith("2-4"):
             series = "ベストタッグ4だん"
+        elif item_id.startswith("2-5"):
+            series = "ベストタッグ5だん"
 
         if stop_processing:
             # If stopped, just add the row (either completed or base) to keep data
@@ -441,6 +551,8 @@ def main():
             series = "ベストタッグ3だん"
         elif item_id.startswith("2-4"):
             series = "ベストタッグ4だん"
+        elif item_id.startswith("2-5"):
+            series = "ベストタッグ5だん"
         
         row['Series'] = series
         
